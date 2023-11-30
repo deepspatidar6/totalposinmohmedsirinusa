@@ -1,0 +1,92 @@
+<ng-container>
+    <span mat-dialog-title>
+        <div class="set_header">
+          <div class="d-flex  align-items-center">
+            <i class="fa-brands fa-product-hunt fs-1"></i>                          <span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;">Product Components</span>  
+          </div>
+          <div>
+            <button
+            align="end"
+            type="button"
+            [mat-dialog-close]="true"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+          </div>
+        </div>
+      </span>
+      <mat-divider></mat-divider>
+      <mat-dialog-content>
+    
+        <form [formGroup]="addproductmanagement">
+            <div class="container-fluid">
+                <div class="row p-4 " style="background-color: white;">
+                    
+                    <div class="col-md-2 col-sm-12   mt-2 ">
+                       PRODUCT NAME
+                        <input class="form-control me-2" type="text" placeholder=" PRODUCT NAME" aria-label="Search">
+                    </div>
+                    <div class="col-md-3 col-sm-12  col-sm-12  mt-2 ">
+                    COMPONENT NAME
+                        <input class="form-control me-2" type="text" placeholder="  COMPONENT NAME" aria-label="Search">
+                    </div>
+                  
+                    <div class="col-md-1  col-sm-12  mt-2 ">
+                        QUANTITY
+                        <div class="input-group flex-nowrap">
+                         
+                            <input type="number" class="form-control"aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+    
+                    </div>
+                    <div class="col-md-2  col-sm-12  mt-2 " >
+                       PRODUCTION DATE
+                        <div class="input-group flex-nowrap">  
+                            <input type="date" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                          </div>
+                        
+                    </div>
+                  
+                    <div class="col-md-2   col-sm-12  mt-2">
+                     SUPPLIER
+                         <div class="input-group flex-nowrap">
+                           
+                             <input type="text" class="form-control" aria-label="Username" aria-describedby="addon-wrapping">
+                           </div>
+                         
+                     </div>
+                     <div class="col-md-2   col-sm-12  mt-2 ">
+                        LOCATION
+                            <div class="input-group flex-nowrap">
+                              
+                                <select style="font-size : 17px !important;" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option  selected>Select location</option>
+                                    <option value="1">DELHI</option>
+                                    <option value="2">MUMBAI</option>
+                                    <option value="3">PUNE</option>
+                                  </select>
+                              </div>
+                            
+                        </div>
+        
+        
+                    
+                </div>
+            </div>
+            
+
+        
+
+        </form>
+      </mat-dialog-content>
+      
+      
+      <mat-divider></mat-divider>
+    <mat-dialog-actions class="py-2" align="end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <div class=" Btn_Save" type="button"  >Save</div>
+          <div mat-dialog-close class="Btn_Close" >Cancel</div>
+        </div>
+    </mat-dialog-actions>
+      
+    </ng-container>

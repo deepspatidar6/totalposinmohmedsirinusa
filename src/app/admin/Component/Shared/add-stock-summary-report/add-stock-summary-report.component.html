@@ -1,0 +1,60 @@
+<ng-container>
+    <span mat-dialog-title>
+        <div class="set_header">
+          <div class="d-flex  align-items-center">
+            <i class="fa-solid fa-folder-open fs-1" style="color: #000000;"></i> <span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;">Stock Summary Report</span>  
+          </div>
+          <div>
+            <button
+            align="end"
+            type="button"
+            [mat-dialog-close]="true"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+          </div>
+        </div>
+      </span>
+      <mat-divider></mat-divider>
+      <mat-dialog-content>
+    
+        <form [formGroup]="addstocksummaryreports">
+         
+            <div class="container-fluid c1 py-3 my-2">
+
+
+                <div class="row">
+                    <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect">LOCATION</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>Location 1</option>
+                            <option value="1">Location 2</option>
+                            <option value="2">Location 3</option>
+                            <option value="3">Location 4</option>
+                        </select>
+                    </div>
+                    <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect">FROM DATE:</label>
+                        <input type="date" class="form-control" placeholder="">
+                    </div>
+                    <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect">TO DATE:</label>
+                        <input type="date" class="form-control" placeholder="">
+                    </div>
+                </div>
+            </div>
+           
+
+        </form>
+      </mat-dialog-content>
+      
+      
+      <mat-divider></mat-divider>
+    <mat-dialog-actions class="py-2" align="end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <div class=" Btn_Save" type="button"  >Save</div>
+          <div mat-dialog-close class="Btn_Close" >Cancel</div>
+        </div>
+    </mat-dialog-actions>
+      
+    </ng-container>

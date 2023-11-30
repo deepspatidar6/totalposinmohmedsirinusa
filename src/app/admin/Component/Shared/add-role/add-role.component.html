@@ -1,0 +1,260 @@
+<ng-container>
+    <span mat-dialog-title>
+        <div class="set_header">
+          <div class="d-flex  align-items-center">
+            <i class="fa-brands fa-product-hunt fs-1"></i><span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;">Manage Roles</span>  
+          </div>
+          <div>
+            <button
+            align="end"
+            type="button"
+            [mat-dialog-close]="true"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+          </div>
+        </div>
+      </span>
+      <mat-divider></mat-divider>
+      <mat-dialog-content>
+    
+        <form [formGroup]="addrole">
+          <div class="container-fluid c1 my-4 py-2">
+            <div class="row">
+                <div class=" col-md-12 col-sm-12 mt-2">
+                    <div class="form-group">
+                        <label for="name" class="form-label">NAME:</label>
+                        <input class="form-control" required="required" name="name" type="text" id="name">
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="row">
+                <div class=" col-md-12 col-sm-12 mt-2">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Permissions:</label>
+                        <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                        <!-- </td> -->
+                        <label for="name" class="form-label">All Permissions</label>
+                        <!-- <td> -->
+
+                    </div>
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Roles:</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Brands:</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Currency:</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Warehouses:</label>
+
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Units:</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Product Categories:</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Products</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Suppliers</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Customers:</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">
+                        Manage Users</label>
+                    <!-- <td> -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Expense Categories</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">
+
+                        Manage Expenses</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Setting</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Pos Screen</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+
+                    <label for="name" class="form-label">Manage Purchase</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Sale</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">
+                        Manage Purchase Return</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+
+                    <label for="name" class="form-label">Manage Sale Return</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Transfers</label>
+                    <!-- <td>  -->
+                </div>
+
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Adjustments</label>
+                    <!-- <td> -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Dashboard</label>
+                    <!-- <td> -->
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">
+                        Manage Email Templates:</label>
+                    <!-- <td>  -->
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Reports</label>
+                    <!-- <td>  -->
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Quotations</label>
+                    <!-- <td>  -->
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">
+                        Manage Sms Templates</label>
+                    <!-- <td>  -->
+
+
+                </div>
+                <div class=" col-md-4 col-sm-12 mt-2">
+                    <input class="form-check-input " type="checkbox" value="" id="flexCheckDefault">
+                    <!-- </td> -->
+                    <label for="name" class="form-label">Manage Sms Apis</label>
+                    <!-- <td>        -->
+                </div>
+            </div>
+        </div>
+           
+
+        </form>
+      </mat-dialog-content>
+      
+      
+      <mat-divider></mat-divider>
+    <mat-dialog-actions class="py-2" align="end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <div class=" Btn_Save" type="button"  >Save</div>
+          <div mat-dialog-close class="Btn_Close" >Cancel</div>
+        </div>
+    </mat-dialog-actions>
+      
+    </ng-container>

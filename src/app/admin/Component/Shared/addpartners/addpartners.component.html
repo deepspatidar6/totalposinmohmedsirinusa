@@ -1,0 +1,382 @@
+<ng-container *ngIf="data.name == 'Partner'">
+    <form [formGroup]="pfirstFormGroup">
+    <span mat-dialog-title>
+        <div class="set_header">
+          <div class="d-flex  align-items-center">
+            <i class="fa-solid fa-user-plus fs-2"></i>
+               <span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;">Add Partner
+              </span>  
+          </div>
+          <div>
+            <button
+            align="end"
+            type="button"
+            [mat-dialog-close]="true"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+          </div>
+        </div>
+      </span>
+      <mat-divider></mat-divider>
+      <mat-dialog-content>
+    
+    
+        <mat-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="pfirstFormGroup">
+            <ng-template matStepLabel >PERSONAL INFORMATION</ng-template>
+      
+              <div class="row"> 
+          <!-- first part -->
+
+          <div class="container-fluid c1 py-3 super">
+            <div class="row">
+
+                <div class="col-sm-12 col-md-3" style="line-height: 2rem;">
+
+                    <label class="ms-4" for="specificSizeSelect"> IMAGE:</label>
+                    <div class="image-upload-wrap mb-3 ms-4" style="width: 90%;">
+                        <!-- <input  type='file' class="file-upload-input ms-4" onchange="readURL(this);" accept="image/*" /> -->
+                            <div class="row mt-5">
+                                <div class="col-md-12 text-center">
+                                    <input class="form-control " type="file">
+                            </div>
+                        </div>
+                        <div class="drag-text">
+                            <h3 style="opacity: 0;">Drag and drop a file or select</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-9 mt-3">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="specificSizeSelect"> ID:</label><br>
+                            <input type="password" class="form-control " id="inputPassword "
+                                placeholder="#ORDER00035">
+                        </div>
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> TAX ID:</label>
+                            <select class="form-select" id="specificSizeSelect">
+                                <option selected> Tax ID</option>
+                                <option value="0">EIN</option>
+                                <option value="1"> VAT</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> TAX ID:</label>
+                            <input type="text" class="form-control " id="inputPassword "
+                                placeholder="Tax Id">
+                        </div>
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="specificSizeSelect"> NAME:</label>
+                            <input type="text" class="form-control " id="inputPassword "
+                                placeholder="Investor Name">
+                        </div>
+                        <div class="col-sm-12 col-md-3 mt-4" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> GENDER:</label>
+                            <select class="form-select" id="specificSizeSelect">
+                                <option value="0">MALE</option>
+                                <option value="1">FEMALE</option>
+                                <option value="2">OTHER</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-3 mt-4" style="line-height: 2rem;">
+                            <label class="" for="specificSizeSelect">DATE OF BIRTH:</label>
+                            <input type="date" class="form-control" placeholder="Date Of Birth">
+                        </div>
+                        <div class="col-sm-3 col-md-3 mt-4" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> BLOOD GROUP:</label>
+                            <input type="text" class="form-control" id="inputPassword "
+                                placeholder="Blood Group">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+             </div>
+
+             <mat-divider></mat-divider>
+                <mat-dialog-actions class="py-2" align="end">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <div mat-dialog-close class="Btn_Close" >Cancel</div>
+                    <button class=" Btn_Save" (click)="to_next1nd()" matStepperNext>Next</button>
+                  </div>
+              </mat-dialog-actions>
+          
+      
+          </mat-step>
+
+
+          <mat-step [stepControl]="pfirstFormGroup" label="CONTACT INFORMATION">
+            <form [formGroup]="psecondFormGroup">
+          
+              <div class="row">
+                <!-- form 2nd -->
+                
+                <div class="container-fluid c1 py-3 mt-4 super">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 mb-3 " style="line-height: 2rem;">
+                            <label class="" for="autoSizingInputGroup"> ADDRESS:</label>
+                            <input type="password" class="form-control" id="inputPassword "
+                                placeholder="Partners Address">
+                        </div>
+                        <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="specificSizeSelect">COUNTRY:</label>
+                            <input type="password" class="form-control" id="inputPassword "
+                                placeholder="Enter Your Country Name">
+                        </div>
+                        <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="specificSizeSelect"> STATE:</label>
+                            <input type="password" class="form-control" id="inputPassword "
+                                placeholder="Enter Your State Name">
+                        </div>
+                        <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="specificSizeSelect"> CITY:</label>
+                            <input type="password" class="form-control" id="inputPassword "
+                                placeholder="Enter Your City Name">
+                        </div>
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> ZIP CODE:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Zip code">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">EMAIL ID:</label>
+                            <input type="email" class="form-control" id="inputPassword " placeholder="Email Id">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">WORK PHONE NUMBER</label>
+                            <input type="number" class="form-control" id="inputPassword "
+                                placeholder="Work Phone Number">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">EXT NUMBER</label>
+                            <input type="number" class="form-control" id="inputPassword " placeholder="Ext Number">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">HOME WORK NUMBER</label>
+                            <input type="number" class="form-control" id="inputPassword "
+                                placeholder="Home Work Number">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+  
+              <mat-divider></mat-divider>
+              <mat-dialog-actions class="py-2" align="end">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                  <button matStepperPrevious class="Btn_Close" >Back</button>
+                  <button class=" Btn_Save" matStepperNext (click)="to_next2nd()">Next</button>
+                </div>
+            </mat-dialog-actions>
+            </form>
+          </mat-step>
+
+  
+          <mat-step><ng-template matStepLabel>PARTNER DETAILS:
+            </ng-template>
+            <form [formGroup]="pthirdFormGroup">
+              <div class="row">
+
+                <div class="container-fluid c1 py-3 mt-4 super">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PARTNER AGREEMENT:</label>
+                            <input type="file" class="form-control" id="inputPassword "
+                                placeholder="Investment Agreement">
+                        </div>
+                      
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PARTNER TYPE:</label>
+                            <select class="form-select" id="specificSizeSelect">
+                                <option selected>General Partner</option>
+                                <option value="0">Limited Partner</option>
+                                <option value="1">Joint Venture</option>
+                                <option value="1">Limited Liability Partner</option>
+                                <option value="1">Limited Liability Limited Investment</option>
+                                <option value="1">Limited Liability Partner (LLP)</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PARTNER RATIO</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Investor Ratio">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">OPENING AMOUNT </label>
+                            <input type="text" class="form-control" id="inputPassword "
+                                placeholder="Opening Amount">
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 pt-3" style="line-height: 2rem;">
+                            <label class="" for="specificSizeSelect">DATE OF JOINING:</label>
+                            <input type="date" class="form-control" placeholder="Date Of Joining">
+                        </div>
+
+                        <div class="col-md-3 col-sm-12 pt-3" style="line-height: 2rem;">
+                            <label class="" for="specificSizeSelect">DATE OF LEAVING:</label>
+                            <input type="date" class="form-control" placeholder="Date Of Leaving">
+                        </div>
+
+                        <div class="col-sm-4 col-md-3 pt-3" style="line-height: 2rem;">
+                            <label class="" for="specificSizeSelect">REASION OF LEAVE:</label>
+                            <input type="text" class="form-control " id="inputPassword "
+                                placeholder="Reasion Of Leave">
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> NOTE:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Note">
+                        </div>
+
+                    </div>
+                </div>
+             
+            </div> 
+                <mat-divider></mat-divider>
+                <mat-dialog-actions class="py-2" align="end">
+                  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                    <button matStepperPrevious class="Btn_Close" >Back</button>
+                     <button class=" Btn_Save" matStepperNext (click)="to_next4nd()">Next</button>
+                    
+                    
+                  </div>
+              </mat-dialog-actions>
+            
+            </form>
+  
+          </mat-step>
+
+
+          <mat-step [stepControl]="pfirstFormGroup" label="PASSPORT/ ID DOCUMENT:">
+            <form [formGroup]="pfourthFormGroup">
+          
+              <div class="row">
+                <!-- form 4nd -->
+                
+                <div class="container-fluid c1 py-3 my-2 mt-4 super">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PASSPORT NO:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Passport No">
+                        </div>
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PASSPORT TYPE:</label>
+                            <select class="form-select" id="specificSizeSelect">
+
+                                <option value="0">Regular passport</option>
+                                <option value="1"> Official passport</option>
+                                <option value="2"> Diplomatic Passport </option>
+                                <option value="2"> Service Passport </option>
+                                <option value="2"> Passport Card </option>
+
+                            </select>
+                        </div>
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PASSPORT ISSUE DATE:</label>
+                            <input type="date" class="form-control" id="inputPassword"
+                                placeholder="Passport Issue Date">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PASSPORT EXPIRY DATE:</label>
+                            <input type="date" class="form-control" id="inputPassword"
+                                placeholder="Passport Eapiry Date">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">PASSPORT COUNTRY:</label>
+                            <input type="date" class="form-control" id="inputPassword"
+                                placeholder="Passport Country">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+  
+              <mat-divider></mat-divider>
+              <mat-dialog-actions class="py-2" align="end">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                  <button matStepperPrevious class="Btn_Close" >Back</button>
+                  <button class=" Btn_Save" matStepperNext (click)="to_next4nd()">Next</button>
+
+                </div>
+            </mat-dialog-actions>
+            </form>
+          </mat-step>
+
+
+          <mat-step [stepControl]="pfirstFormGroup" label="BANK INFORMATION:">
+            <form [formGroup]="pfifthFormGroup">
+              <div class="row">
+                <!-- form 5nd -->
+                <div class="container-fluid c1 py-3 my-2 mt-4 super">
+                    <div class="row">
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup"> BANK NAME:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Bank Name">
+                        </div>
+                        <div class="col-sm-12 col-md-6" style="line-height:2rem;">
+                            <label class="" for="autoSizingInputGroup">BANK ADDRESS:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="bank Address">
+                        </div>
+
+                        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">CARD TYPE:</label>
+                            <select class="form-select" id="specificSizeSelect">
+                                <option value="0">Visa</option>
+                                <option value="1">Mastercard</option>
+                                <option value="2"> American Express</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">CARD NO:</label>
+                            <input type="number" class="form-control" id="inputPassword " placeholder="Card No">
+                        </div>
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;">
+                            <label class="" for="autoSizingInputGroup">EXPIRY DATE:</label>
+                            <input type="date" class="form-control" id="inputPassword "
+                                placeholder="Country Of Issue">
+                        </div>
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">ACCOUNT NO:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Account No">
+                        </div>
+                        <div class="col-sm-12 col-md-3 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">Routing NO:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Routing No">
+                        </div>
+                        <div class="col-sm-12 col-md-12 pt-3" style="line-height: 2rem;  ">
+                            <label class="" for="autoSizingInputGroup">NOTE:</label>
+                            <input type="text" class="form-control" id="inputPassword " placeholder="Note">
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+              <mat-divider></mat-divider>
+              <mat-dialog-actions class="py-2" align="end">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                  <button matStepperPrevious class="Btn_Close" >Back</button>
+                  <button class=" Btn_Save" (click)="to_next5nd()" >Add</button>
+                </div>
+            </mat-dialog-actions>
+            </form>
+          </mat-step>
+
+
+
+        </mat-stepper>
+        
+      </mat-dialog-content>
+      
+  </form>
+  </ng-container>

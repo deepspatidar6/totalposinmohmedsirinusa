@@ -1,0 +1,159 @@
+<div class="container-fluid c1 my-4 py-2">
+    <div class="row">
+        <div class="col-sm-4 col-md-4 my-3">
+            <h3 class="d-inline"><i class="fa-regular fa-scanner-gun me-3" style="color: #000000;"></i>Inventory Scanning Management 
+            </h3>
+            <!-- <button class="btn btn-primary d-inline float-end" type="button">Back</button> -->
+        </div>
+    </div>
+</div>
+<div class="container-fluid c1 my-4 py-2">
+    <div class="row">
+        <div class="col-sm-12 col-md-3" style="line-height: 2rem;  width: auto;">
+            <label class="" for="specificSizeSelect">INVENTORY NO:</label><br>
+            <input type="number" class="form-control " id="inputPassword" placeholder="Automatic">
+        </div>
+        <div class=" col-sm-12 col-md-3" style="line-height: 2rem; width: auto; ">
+            <label class="" for="specificSizeSelect">INVENTORY DATE:</label><br>
+            <input type="date" class="form-control " id="inputPassword" placeholder="Automatic">
+        </div>
+        <div class=" col-sm-4 col-md-3" style="line-height: 2rem; width: auto;">
+            <label class="" for="specificSizeSelect">LOCATION:</label>
+            <select class="form-select" id="specificSizeSelect">
+                <option selected>Main Branch</option>
+                <option value="1">Branch Two</option>
+                <option value="2">Branch Three</option>
+            </select>
+        </div>
+   
+        <div class="col-sm-12 col-md-3" style="line-height: 2rem; width: auto;">
+            <label class="" for="specificSizeSelect"></label><br>
+            <button class="btn btn-primary px-3 " type="button">
+                <i class="fa-solid fa-arrow-up-from-bracket" class="me-3" style="color: #ffff;"></i>
+                Upload
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- </div> -->
+
+  <div class="container-fluid c1 my-4 py-2">
+    <div style="overflow: auto;">
+    <table class="table table-hover">
+        <thead>
+            <th scope="col"></th>
+            <th scope="col" style="text-align: center;">PRODUCT SKU</th>
+            <th scope="col" style="text-align: center;">PRODUCT NAME</th>
+            <th scope="col" style="text-align: center;">PRICE</th>
+            <th scope="col" style="text-align: center;">QTY</th>
+            <!-- <th scope="col" style="text-align: center;">AMOUNT</th> -->
+            <th scope="col" style="text-align: center;">STATUS</th>
+            <th scope="col " style="padding-left: 4rem;">ACTION</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> <input class="form-check-input mt-2" type="checkbox" value="" id="flexCheckDefault"></td>
+
+                <td><span class="card text-center">#1001</span></td>
+               
+                <td><span class="card text-center">Sandle
+                    </span></td>
+
+                <td><span class="card text-center">50.00 $
+                    </span></td>
+
+                    <td style="width: 130px; height: 50px;"><span class="card text-center">500
+                    </span></td>
+                <td>
+                    <select class="card text-center form-select px-3" id="specificSizeSelect">
+                        <option selected>Bad</option>
+                        <option selected>Good</option>
+                    </select>
+                </td>
+                <td>
+                    <div class="parent_div ">
+                        <div style="cursor: pointer;" class="add_icon"
+                            aria-label="Example icon button with a menu icon">
+                            <i class="ri-file-add-line"></i>
+                        </div>
+                        <div style="cursor: pointer;" class="view_icon"
+                            aria-label="Example icon button with a menu icon">
+                            <i class="ri-eye-line"></i>
+                        </div>
+                        <div style="cursor: pointer;" class="edit_icon"
+                            aria-label="Example icon button with a menu icon">
+                            <i class="ri-pencil-line"></i>
+                        </div>
+
+                        <div style="cursor: pointer;" class="delete_icon"
+                            aria-label="Example icon button with a menu icon">
+                            <i class="ri-delete-bin-6-line "></i>
+                        </div>
+                        <div style="cursor: pointer;" class="print_icon"
+                            aria-label="Example icon button with a menu icon">
+                            <i class="ri-printer-fill"></i>
+                        </div>
+
+
+                        <div class="btn-group dropstart">
+                            <button type="button" class="btn  " data-bs-toggle="dropdown"
+                                aria-expanded="fals"><i class="ri-more-2-fill"></i>
+                            </button>
+                            <ul class="dropdown-menu" style="width: 16vw;">
+                                <li><a class="dropdown-PRODUCT" href="#"><i class="ri-eye-fill"></i> View
+                                        Sale</a></li>
+                                <li><a class="dropdown-PRODUCT" href="#"><i class="ri-download-fill"></i>
+                                        Download
+                                        PDF</a></li>
+                                <li><a class="dropdown-PRODUCT" href="#"><i
+                                            class="ri-money-dollar-circle-fill"></i>
+                                        Show Payments</a>
+                                </li>
+
+                                <li><a class="dropdown-PRODUCT" href="#"><i class="ri-shopping-cart-fill"></i>
+                                        Create
+                                        Sale Return</a>
+                                </li>
+
+                                <li><a class="dropdown-PRODUCT" href="#"><i class="ri-pencil-fill"></i> Edit
+                                        Sale</a>
+                                </li>
+                                <li><a class="dropdown-PRODUCT" href="#"><i class="ri-delete-bin-5-fill"></i>
+                                        Delete
+                                        Sale</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="container-fluid c1 py-3 my-2">
+        <div class="row">
+            <div class="col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                <label class="" for="specificSizeSelect">TOTAL INVENTORY ITEMS:</label><br>
+                <input type="number" class="form-control" id="inputPassword" placeholder="Automatic">
+            </div>
+            <div class="col-sm-12 col-md-3" style="line-height: 2rem;">
+                <label class="" for="specificSizeSelect">TOTAL INVENTORY QTY:</label><br>
+                <input type="" class="form-control" id="" placeholder="Automatic">
+            </div>
+        </div>
+    </div>
+</div>
+   
+</div>
+<div class="container-fluid c1  my-4 py-2">
+  
+        <div class="row">
+            <div class="mb-3 mx-3">
+                    <label for="exampleFormControlInput1" class="form-label"> <b>NOTE</b></label>
+                <!-- <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>  -->
+            </div>
+            <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn-primary me-md-2 Btn_Save" type="button">Save</button>
+            </div> -->
+       
+    </div>
+</div>
