@@ -1,0 +1,138 @@
+<ng-container>
+    <span mat-dialog-title>
+        <div class="set_header">
+          <div class="d-flex  align-items-center">
+            <img src="../../../../../assets/logos/billentry.png" style="height: 20px; width: 20px;" alt=""><span class="text-capitalize img-fluid  fw-bold" style="font-family: Arial, Helvetica, sans-serif;">Purchse Bill Entry</span>  
+          </div>
+          <div>
+            <button
+            align="end"
+            type="button"
+            [mat-dialog-close]="true"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+          </div>
+        </div>
+      </span>
+      <mat-divider></mat-divider>
+      <mat-dialog-content>
+    
+        <form [formGroup]="addpurchasebill">
+        
+            <div class="container-fluid c1  my-2 py-2">
+
+
+                <div class="row">
+                    <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+        
+                        <label class="" for="specificSizeSelect">INVOICE NO.:</label><br>
+                        <input type="password" class="form-control " id="inputPassword " placeholder="#ORDER00035">
+        
+                    </div>
+        
+                    <div class="  col-md-3 col-sm-12" style="line-height: 2rem;  ">
+        
+                        <label class="" for="specificSizeSelect">DATE:</label>
+                        <input type="date" class="form-control"  placeholder=" ">
+                    </div>
+        
+                    <div class=" col-sm-4 col-md-3" style="line-height: 2rem;  ">
+        
+                        <label class="" for="specificSizeSelect">PARTY ACCOUNT:</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>CREDITORS NAME</option>
+                            <option value="1">CREDITORS NAME</option>
+                            <option value="2">CREDITORS NAME</option>
+                            <option value="3">CREDITORS NAME</option>
+                        </select>
+        
+        
+        
+                    </div>
+        
+                    <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect">PURCHASE LEDGER ACCOUNT:</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>PURCHASE ACCOUNT</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+        
+        
+        
+                    </div>
+        
+                    <div class=" col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect"> PRODUCT NAME:</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>PRODUCT 1</option>
+                            <option value="1">PRODUCT 2</option>
+                            <option value="2">PRODUCT 3</option>
+                            <option value="3">PRODUCT 4</option>
+                        </select>
+        
+        
+                    </div>
+        
+                    <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                        <label class="" for="autoSizingInputGroup">QUANTITY:</label>
+                        <input type="password" class="form-control" id="inputPassword " placeholder="Enter Quantity">
+        
+        
+        
+                    </div>
+        
+                    <div class=" col-sm-4 col-md-3" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect">PRICE:</label>
+                        <select class="form-select" id="specificSizeSelect">
+                            <option selected>200 $</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+        
+        
+        
+                    </div>
+        
+                    <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                        <label class="" for="specificSizeSelect">AMOUNT:</label>
+                        <input type="password" class="form-control" id="inputPassword " placeholder="Quantity*PRICE">
+        
+                    </div>
+                    <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+        
+                        <label class="" for="specificSizeSelect">TAX TYPE:</label>
+                        <select class="form-select" id="specificSizeSelect">
+                          <option selected>Sales Tax</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                
+                
+                
+                      </div>
+                      <div class=" col-sm-12 col-md-9" style="line-height: 2rem;  ">
+                        <label class="" for="autoSizingInputGroup">Notes:</label>
+                        <input type="password" class="form-control" id="inputPassword " placeholder="Enter Notes">
+                    </div>
+                    
+                </div>
+            </div>
+
+        </form>
+      </mat-dialog-content>
+      
+      
+      <mat-divider></mat-divider>
+    <mat-dialog-actions class="py-2" align="end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+          <div class=" Btn_Save" type="button"  >Save</div>
+          <div mat-dialog-close class="Btn_Close" >Cancel</div>
+        </div>
+    </mat-dialog-actions>
+      
+    </ng-container>

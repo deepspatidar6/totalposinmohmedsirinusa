@@ -63,6 +63,13 @@ import { ProductionRecievedComponent } from './component/pages/production-reciev
 import { PartnerComponent } from './component/pages/partner/partner.component';
 import { InvestersComponent } from './component/pages/investers/investers.component';
 import { InventoryScanningManagementComponent } from './component/pages/inventory-scanning-management/inventory-scanning-management.component';
+import { JournalReportsComponent } from './component/pages/journal-reports/journal-reports.component';
+import { BankbookComponent } from './component/pages/bankbook/bankbook.component';
+import { CashBookComponent } from './component/pages/cash-book/cash-book.component';
+import { SalesReturnInvoiceComponent } from './component/sales-return-invoice/sales-return-invoice.component';
+import { SalesReturnInvoiceUpdatedComponent } from './component/pages/sales-return-invoice-updated/sales-return-invoice-updated.component';
+import { PurchseBillEntryComponent } from './component/pages/purchse-bill-entry/purchse-bill-entry.component';
+import { PurchaseOrderBookReportComponent } from './component/pages/purchase-order-book-report/purchase-order-book-report.component';
 
 const routes: Routes = [
   {
@@ -332,10 +339,29 @@ const routes: Routes = [
         path : "inventoryscanning",
         component : InventoryScanningManagementComponent
       },
+      {
+        path : "journalreports",
+        component : JournalReportsComponent
+      },
+      {
+        path : "bankbook",
+        component : BankbookComponent
+      },
+      {
+        path : "salesreturninvoiceupdated",
+        component : SalesReturnInvoiceUpdatedComponent
+      },
+      {
+        path : "purchasebillentry",
+        component : PurchseBillEntryComponent
+      },
+      {
+        path : "purchaseorderbookreport",
+        component : PurchaseOrderBookReportComponent
+      },
     ]
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]

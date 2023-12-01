@@ -136,6 +136,15 @@ import { AddpartnersComponent } from './component/shared/addpartners/addpartners
 import { InvestersComponent } from './component/pages/investers/investers.component';
 import { AddinvestersComponent } from './component/shared/addinvesters/addinvesters.component';
 import { InventoryScanningManagementComponent } from './component/pages/inventory-scanning-management/inventory-scanning-management.component';
+import { JournalReportsComponent } from './component/pages/journal-reports/journal-reports.component';
+import { BankbookComponent } from './component/pages/bankbook/bankbook.component';
+import { CashBookComponent } from './component/pages/cash-book/cash-book.component';
+import { SalesReturnInvoiceComponent } from './component/sales-return-invoice/sales-return-invoice.component';
+import { SalesReturnInvoiceUpdatedComponent } from './component/pages/sales-return-invoice-updated/sales-return-invoice-updated.component';
+import { AddsalesReturnInvoiceUpdatedComponent } from './component/shared/addsales-return-invoice-updated/addsales-return-invoice-updated.component';
+import { PurchseBillEntryComponent } from './component/pages/purchse-bill-entry/purchse-bill-entry.component';
+import { AddpurchseBillEntryComponent } from './component/shared/addpurchse-bill-entry/addpurchse-bill-entry.component';
+import { PurchaseOrderBookReportComponent } from './component/pages/purchase-order-book-report/purchase-order-book-report.component';
 
 export function HttpLoaderFactory(_http: HttpBackend) {
   return new MultiTranslateHttpLoader(_http , [
@@ -232,6 +241,15 @@ export function HttpLoaderFactory(_http: HttpBackend) {
     InvestersComponent,
     AddinvestersComponent,
     InventoryScanningManagementComponent,
+    JournalReportsComponent,
+    BankbookComponent,
+    CashBookComponent,
+    SalesReturnInvoiceComponent,
+    SalesReturnInvoiceUpdatedComponent,
+    AddsalesReturnInvoiceUpdatedComponent,
+    PurchseBillEntryComponent,
+    AddpurchseBillEntryComponent,
+    PurchaseOrderBookReportComponent,
     
   ],
   imports: [
