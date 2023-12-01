@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+td, th {
+  width: 25%;
+}
+
+.tex{
+  text-transform: uppercase;
+}
+.mat-paginator{
+width: 100%;
+}
+.demo-button  {
+display: flex;
+justify-content: right;
+align-items:right ;
+margin-top: 20px;
+}
+
+.demo-button button{
+  background-color: #0a1e3c;
+  color: #FFF;
+}

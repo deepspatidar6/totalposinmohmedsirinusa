@@ -1,0 +1,464 @@
+
+
+
+
+<ng-container *ngIf="data.name == 'Department'">
+ <span mat-dialog-title  >
+
+
+  <div class="set_header">
+    <div class="d-flex align-items-center">
+      <img src="./assets/submenu/enterprise.png" style="height: 5vh;" alt="" srcset="">  
+      <span class="text-capitalize fs-4 mx-2" style="font-family: Arial, Helvetica, sans-serif;"> Department</span>  
+      </div>
+    <div>
+      <button
+      align="end"
+      type="button"
+      [mat-dialog-close]="true"
+      class="btn-close"
+      aria-label="Close"
+    ></button>
+    </div>
+  </div>
+</span>
+<mat-divider></mat-divider>
+<mat-dialog-content class="mat-typography">
+  <div class="form-group">
+    <label class="form-label ">Department Name</label>
+    <input type="text" class="form-control" placeholder="Department Name..." />
+  </div>
+
+
+  <div class="form-group">
+  <label class="form-label">Status</label>
+  <select class="form-select" aria-label="Default select example">
+    <option value="1">OFF</option>
+    <option value="2">ON</option>
+
+
+  </select>
+</div>
+</mat-dialog-content>
+<mat-dialog-actions align="center">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Add Department</button>
+</mat-dialog-actions>
+</ng-container>
+
+
+<ng-container *ngIf="data.name == 'Category'">
+
+<span mat-dialog-title>
+
+  <div class="set_header">
+    <div class="d-flex  align-items-center">
+         <img src="../../../../../assets/submenu/grid.png" style="height: 5vh;" alt="" srcset="">  
+         <span class="text-capitalize fs-4 mx-2" style="font-family: Arial, Helvetica, sans-serif;"> Categorie</span>  
+    </div>
+    <div>
+      <button
+      align="end"
+      type="button"
+      [mat-dialog-close]="true"
+      class="btn-close"
+      aria-label="Close"
+    ></button>
+    </div>
+  </div>
+ 
+  
+</span>
+<mat-divider></mat-divider>
+<div mat-dialog-content>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label class="form-label">Category Images</label>
+        <input type="file" class="form-control" placeholder="Category Name..." />
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label class="form-label">Category Name</label>
+        <input type="text" class="form-control" placeholder="Category Name..." />
+      </div>
+    </div>
+  </div>
+  
+</div>
+<mat-dialog-actions align="center">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Add Categorie</button>
+</mat-dialog-actions>
+
+</ng-container>
+
+<ng-container *ngIf="data.name == 'Brand'">
+
+  <span mat-dialog-title>
+  
+    <div class="set_header">
+      <div class="d-flex  align-items-center">
+           <img src="../../../../../assets/submenu/brand-image.png" style="height: 5vh;" alt="" srcset="">  
+           <span class="text-capitalize fs-4 mx-2" style="font-family: Arial, Helvetica, sans-serif;"> Brand</span>  
+      </div>
+      <div>
+        <button
+        align="end"
+        type="button"
+        [mat-dialog-close]="true"
+        class="btn-close"
+        aria-label="Close"
+      ></button>
+      </div>
+    </div>
+   
+    
+  </span>
+  <mat-divider></mat-divider>
+  <form [formGroup]="brandform">
+  <div mat-dialog-content>
+   <div class="form-group">
+    <label class="form-label">Brand Name</label>
+    <input type="text" formControlName="brandname" class="form-control" placeholder="Brand Name..." />
+        <small class="text-danger" *ngIf="ckformBrand">Enter your Brand Name Required</small>
+        </div>
+      </div>
+    </form>
+
+  
+  <mat-dialog-actions align="center">
+    <button mat-button mat-dialog-close >Cancel</button>
+    <button mat-button  [mat-dialog-close]="brandform.value" (click)="Create_And_Update_Brand()" cdkFocusInitial>Add Brand</button>
+  </mat-dialog-actions>
+  
+</ng-container>
+<ng-container *ngIf="data.name == 'Unit'">
+
+  <span mat-dialog-title>
+    <div class="set_header">
+      <div class="d-flex  align-items-center">
+           <img src="../../../../../assets/submenu/teamwork.png" style="height: 5vh;" alt="" srcset="">  
+           <span class="text-capitalize fs-4 mx-2" style="font-family: Arial, Helvetica, sans-serif;"> Unit</span>  
+      </div>
+      <div>
+        <button
+        align="end"
+        type="button"
+        [mat-dialog-close]="true"
+        class="btn-close"
+        aria-label="Close"
+      ></button>
+      </div>
+    </div>
+   
+    
+  </span>
+  <mat-divider></mat-divider>
+  <div mat-dialog-content>
+    
+     
+        <div class="form-group">
+          <label class="form-label">Unit Name</label>
+          <input type="text" class="form-control" placeholder="Unit Name..." />
+        </div>
+      </div>
+   
+    
+  
+  <mat-dialog-actions align="center">
+    <button mat-button mat-dialog-close>Cancel</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Add Unit</button>
+  </mat-dialog-actions>
+  
+</ng-container>
+
+
+
+<ng-container *ngIf="data.name == 'orders'">
+<span mat-dialog-title>
+    <div class="set_header">
+      <div class="d-flex  align-items-center">
+           <img src="../../../../../assets/submenu/brand-image.png" style="height: 5vh;" alt="" srcset="">  
+           <span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;"> Purchase Order</span>  
+      </div>
+      <div>
+        <button
+        align="end"
+        type="button"
+        [mat-dialog-close]="true"
+        class="btn-close"
+        aria-label="Close"
+      ></button>
+      </div>
+    </div>
+  </span>
+  <mat-divider></mat-divider>
+  <mat-dialog-content>
+
+    <form [formGroup]="PurchaseOrderform">
+    <div class="container-fluid c1 py-3 my-2">
+      <div class="row">
+          <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+               <label class="form-label" for="specificSizeSelect">Order No. </label><br>
+               <input type="text" disabled class="form-control" [value]="countes" id="inputPassword " >
+          </div>
+        <div class="  col-md-3 col-sm-12" style="line-height: 2rem;  ">
+          <label class="form-label" for="specificSizeSelect">Order Date</label>
+             <input type="text" disabled [value]=" newDates | date : 'dd/MM/YY'" class="form-control" />
+         
+          </div>
+          <div class="col-md-3 col-sm-12" style="line-height: 2rem;">
+        <label class="form-label" for="specificSizeSelect">Due Date</label>
+            <input type="date" formControlName="DueDate"  class="form-control" placeholder=" ">
+            <small class="text-danger" *ngIf="PurchaseOrderform.controls['DueDate'].errors && ckPurchaseOrderform">Select your Dus Date </small>
+          </div>
+          <div class=" col-sm-4 col-md-3" style="line-height: 2rem;  ">
+
+              <label class="form-label" for="specificSizeSelect">Party Account</label>
+              <select class="form-select" formControlName="PartyAccount" id="specificSizeSelect">
+                  <option value="" >Select</option>
+                  <option>Amer</option>
+                  <option >Ram</option>
+                  <option >Shyem</option>
+              </select>
+
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['PartyAccount'].errors && ckPurchaseOrderform">Select your PARTY ACCOUNT</small>
+
+          </div>
+
+          <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+            <label class="form-label" for="specificSizeSelect"> Purchase Ledger</label>
+              <select class="form-select" formControlName="PurchaseSalesLedger" id="specificSizeSelect">
+                  <option value="">Select</option>
+                  <option >PURCHASE ACCOUNT</option>
+                  <option >Two</option>
+                  <option >Three</option>
+              </select>
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['PurchaseSalesLedger'].errors && ckPurchaseOrderform">Select your PURCHASE LEDGER</small>
+
+
+
+          </div>
+          <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+
+              <label class="form-label" for="specificSizeSelect"> Product Name</label>
+              <select class="form-select" formControlName="ProductName" id="specificSizeSelect">
+                  <option value="">Select</option>
+                  <option>PRODUCT 2</option>
+                  <option>PRODUCT 3</option>
+                  <option>PRODUCT 4</option>
+              </select>
+
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['ProductName'].errors && ckPurchaseOrderform">Select your PRODUCT NAME</small>
+
+          </div>
+
+         
+
+          <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+
+              <label class="form-label" for="autoSizingInputGroup">Quantity </label>
+              <input type="text" (input)="ckpice()" formControlName="Quantity" class="form-control" id="inputPassword " placeholder="Enter Quantity">
+           
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['Quantity'].errors && ckPurchaseOrderform">Enter your  QUANTITY </small>
+
+          </div>
+
+          <div class=" col-sm-3 col-md-3" style="line-height: 2rem;  ">
+
+              <label class="form-label" for="specificSizeSelect">Price</label>
+              <input type="text" (input)="ckpice()" formControlName="Price" class="form-control"  placeholder="Enter Price">
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['Price'].errors && ckPurchaseOrderform">Enter your  PRICE </small>
+           
+
+
+
+          </div>
+
+
+          <div class=" col-sm-12 col-md-3" style="line-height: 2rem;">
+              <label class="form-label" for="specificSizeSelect">Amount</label>
+              <input type="text" disabled class="form-control" [value]="setAmount" id="inputPassword " placeholder="Quantity*PRICE">
+          </div>
+
+          <div class=" col-sm-12 col-md-3" style="line-height: 2rem;">
+            <label class="form-label" for="specificSizeSelect">Status	</label>
+            <select class="form-select" formControlName="Status" id="specificSizeSelect">
+              <option value="">Select</option>
+              <option >On</option>
+              <option >Off</option>
+            </select>
+            <small class="text-danger" *ngIf="PurchaseOrderform.controls['Status'].errors && ckPurchaseOrderform">Select your Status</small>
+          </div>
+          <div class=" col-sm-12 col-md-3" style="line-height: 2rem; ">
+            <label class="form-label"  for="autoSizingInputGroup">Warehouse</label>
+            <select class="form-select" formControlName="Warehouse" id="specificSizeSelect">
+              <option value="">Select</option>
+              <option>Warehouse 1</option>
+              <option >Warehouse 2</option>
+            </select>
+            <small class="text-danger" *ngIf="PurchaseOrderform.controls['Warehouse'].errors && ckPurchaseOrderform">Select your Warehouse</small>
+          </div>
+         <div class=" col-sm-12 col-md-3" style="line-height: 2rem; ">
+              <label class="form-label"  for="autoSizingInputGroup">Notes</label>
+              <input type="text" formControlName="Notes" class="form-control" id="autoSizingInputGroup " placeholder="Enter Notes">
+
+            </div>
+      </div>
+    </div>
+    </form>
+  </mat-dialog-content>
+  
+  
+  <mat-divider></mat-divider>
+<mat-dialog-actions class="py-2" align="end">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <div class=" Btn_Save" (click)="add_order()" type="button">Save</div>
+      <div mat-dialog-close class="Btn_Close" >Cancel</div>
+    </div>
+</mat-dialog-actions>
+  
+</ng-container>
+
+
+<ng-container *ngIf="data.name == 'Purchase-invoice'">
+  <span mat-dialog-title>
+      <div class="set_header">
+        <div class="d-flex  align-items-center">
+             <img src="./assets/billentry.png" style="height: 5vh;" alt="" srcset="">  
+             <span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;">  Purchase Invoice</span>  
+        </div>
+        <div>
+          <button
+          align="end"
+          type="button"
+          [mat-dialog-close]="true"
+          class="btn-close"
+          aria-label="Close"
+        ></button>
+        </div>
+      </div>
+    </span>
+    <mat-divider></mat-divider>
+    <mat-dialog-content>
+  
+      <!-- <form [formGroup]="PurchaseOrderform"> -->
+      <div class="container-fluid c1 py-3 my-2">
+        <div class="row">
+            <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+                 <label class="form-label" for="specificSizeSelect">Invoice No. </label><br>
+                 <input type="text" disabled class="form-control" [value]="countes" id="inputPassword " >
+            </div>
+          <div class="  col-md-3 col-sm-12" style="line-height: 2rem;  ">
+            <label class="form-label" for="specificSizeSelect">Order Date</label>
+               <input type="text" disabled [value]=" newDates | date : 'dd/MM/YY'" class="form-control" />
+           
+            </div>
+            <div class="col-md-3 col-sm-12" style="line-height: 2rem;">
+          <label class="form-label" for="specificSizeSelect">Due Date</label>
+              <input type="date"   class="form-control" placeholder=" ">
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['DueDate'].errors && ckPurchaseOrderform">Select your Dus Date </small>
+            </div>
+            <div class=" col-sm-4 col-md-3" style="line-height: 2rem;  ">
+  
+                <label class="form-label" for="specificSizeSelect">Party Account</label>
+                <select class="form-select" id="specificSizeSelect">
+                    <option value="" >Select</option>
+                    <option>Amer</option>
+                    <option >Ram</option>
+                    <option >Shyem</option>
+                </select>
+  
+                <small class="text-danger" *ngIf="PurchaseOrderform.controls['PartyAccount'].errors && ckPurchaseOrderform">Select your PARTY ACCOUNT</small>
+  
+            </div>
+  
+            <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+              <label class="form-label" for="specificSizeSelect"> Purchase Ledger</label>
+                <select class="form-select"  id="specificSizeSelect">
+                    <option value="">Select</option>
+                    <option >PURCHASE ACCOUNT</option>
+                    <option >Two</option>
+                    <option >Three</option>
+                </select>
+                <small class="text-danger" *ngIf="PurchaseOrderform.controls['PurchaseSalesLedger'].errors && ckPurchaseOrderform">Select your PURCHASE LEDGER</small>
+  
+  
+  
+            </div>
+            <div class=" col-sm-12 col-md-3" style="line-height: 2rem;  ">
+  
+                <label class="form-label" for="specificSizeSelect"> Product Name</label>
+                <select class="form-select"  id="specificSizeSelect">
+                    <option value="">Select</option>
+                    <option>PRODUCT 2</option>
+                    <option>PRODUCT 3</option>
+                    <option>PRODUCT 4</option>
+                </select>
+  
+                <small class="text-danger" *ngIf="PurchaseOrderform.controls['ProductName'].errors && ckPurchaseOrderform">Select your PRODUCT NAME</small>
+  
+            </div>
+  
+           
+  
+            <div class="col-sm-4 col-md-3" style="line-height: 2rem;  ">
+  
+                <label class="form-label" for="autoSizingInputGroup">Quantity </label>
+                <input type="text" (input)="ckpice()"  class="form-control" id="inputPassword " placeholder="Enter Quantity">
+             
+                <small class="text-danger" *ngIf="PurchaseOrderform.controls['Quantity'].errors && ckPurchaseOrderform">Enter your  QUANTITY </small>
+  
+            </div>
+  
+            <div class=" col-sm-3 col-md-3" style="line-height: 2rem;  ">
+  
+                <label class="form-label" for="specificSizeSelect">Price</label>
+                <input type="text" (input)="ckpice()"  class="form-control"  placeholder="Enter Price">
+                <small class="text-danger" *ngIf="PurchaseOrderform.controls['Price'].errors && ckPurchaseOrderform">Enter your  PRICE </small>
+             
+  
+  
+  
+            </div>
+  
+  
+            <div class=" col-sm-12 col-md-3" style="line-height: 2rem;">
+                <label class="form-label" for="specificSizeSelect">Amount</label>
+                <input type="text" disabled class="form-control" [value]="setAmount" id="inputPassword " placeholder="Quantity*PRICE">
+            </div>
+  
+            <div class=" col-sm-12 col-md-3" style="line-height: 2rem;">
+              <label class="form-label" for="specificSizeSelect">Status	</label>
+              <select class="form-select"  id="specificSizeSelect">
+                <option value="">Select</option>
+                <option >On</option>
+                <option >Off</option>
+              </select>
+              <small class="text-danger" *ngIf="PurchaseOrderform.controls['Status'].errors && ckPurchaseOrderform">Select your Status</small>
+            </div>
+          
+           <div class=" col-sm-12 col-md-6" style="line-height: 2rem; ">
+                <label class="form-label"  for="autoSizingInputGroup">Notes</label>
+                <input type="text"  class="form-control" id="autoSizingInputGroup " placeholder="Enter Notes">
+  
+              </div>
+        </div>
+      </div>
+      <!-- </form> -->
+    </mat-dialog-content>
+    
+    
+    <mat-divider></mat-divider>
+  <mat-dialog-actions class="py-2" align="end">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <div class=" Btn_Save" (click)="add_order()" type="button">Save</div>
+        <div mat-dialog-close class="Btn_Close" >Cancel</div>
+      </div>
+  </mat-dialog-actions>
+    
+</ng-container>
+
+
