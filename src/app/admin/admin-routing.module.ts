@@ -72,6 +72,10 @@ import { DropShippingComponent } from './component/pages/drop-shipping/drop-ship
 import { OutstadingReportComponent } from './component/pages/outstading-report/outstading-report.component';
 import { CashBookComponent } from './component/pages/cash-book/cash-book.component';
 import { BankBookComponent } from './component/pages/bank-book/bank-book.component';
+import { DebitorsOutstandingReportComponent } from './component/pages/debitors-outstanding-report/debitors-outstanding-report.component';
+import { CreditorsOutstandingReportComponent } from './component/pages/creditors-outstanding-report/creditors-outstanding-report.component';
+import { LedgerOutstandingReportComponent } from './component/pages/ledger-outstanding-report/ledger-outstanding-report.component';
+import { CurrrenciesComponent } from './component/pages/currrencies/currrencies.component';
 
 
 const routes: Routes = [
@@ -373,6 +377,22 @@ const routes: Routes = [
       {
         path : "bankbook",
         component: BankBookComponent
+      },
+      {
+        path : "debitorsoutstandingreport",
+        component : DebitorsOutstandingReportComponent
+      },
+      {
+        path : "creditorsoutstandingreport",
+        component: CreditorsOutstandingReportComponent
+      },
+      {
+        path : "ledgeroutstandingreport",
+        component: LedgerOutstandingReportComponent
+      },
+      {
+        path : "setting/currencies",
+        component: CurrrenciesComponent
       }
       
     ]

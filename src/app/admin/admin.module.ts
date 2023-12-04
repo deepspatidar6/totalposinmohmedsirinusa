@@ -136,6 +136,11 @@ import { AddDropShippingComponent } from './component/shared/add-drop-shipping/a
 import { OutstadingReportComponent } from './component/pages/outstading-report/outstading-report.component';
 import { CashBookComponent } from './component/pages/cash-book/cash-book.component';
 import { BankBookComponent } from './component/pages/bank-book/bank-book.component';
+import { DebitorsOutstandingReportComponent } from './component/pages/debitors-outstanding-report/debitors-outstanding-report.component';
+import { CreditorsOutstandingReportComponent } from './component/pages/creditors-outstanding-report/creditors-outstanding-report.component';
+import { LedgerOutstandingReportComponent } from './component/pages/ledger-outstanding-report/ledger-outstanding-report.component';
+import { CurrrenciesComponent } from './component/pages/currrencies/currrencies.component';
+import { ShippingAndDeliveryComponent } from './component/pages/shipping-and-delivery/shipping-and-delivery.component';
 
 
 export function HttpLoaderFactory(_http: HttpBackend) {
@@ -242,6 +247,11 @@ export function HttpLoaderFactory(_http: HttpBackend) {
     OutstadingReportComponent,
     CashBookComponent,
     BankBookComponent,
+    DebitorsOutstandingReportComponent,
+    CreditorsOutstandingReportComponent,
+    LedgerOutstandingReportComponent,
+    CurrrenciesComponent,
+    ShippingAndDeliveryComponent,
     
   ],
   imports: [

@@ -20,6 +20,11 @@ export  const Sub_Menu = [
             "routes" : "/admin/department",
             "img" : 'network.png'
              },
+
+             {  "name_super_sub" : "Currencies",
+            "routes" : "/admin/setting/currencies",
+            "img" : 'network.png'
+             },
             //  {  "name_super_sub" : "Tables ",
             //  "routes" : "/admin/department",
             //  "img" : 'dinner-table.png'
@@ -856,7 +861,23 @@ export  const Sub_Menu = [
         'super_manu' : [
           {"name_super_sub" : "Account Statements",
           "routes" : "/admin/",
-          "img" : 'marketing-mix.png'
+          "img" : 'marketing-mix.png',
+
+          "last_menu" : [
+            { "name_super_sub_last" : "Creditors Outstanding Report",
+              "routes" : "/admin/creditorsoutstandingreport",
+              "img" : 'marketing-mix.png'
+           },
+           { "name_super_sub_last" : "Debitors Outstanding Report ",
+            "routes" : "/admin/debitorsoutstandingreport",
+            "img" : 'marketing-mix.png'
+           },
+           { "name_super_sub_last" : "Ledger Outstanding Report",
+           "routes" : "/admin/ledgeroutstandingreport",
+           "img" : 'marketing-mix.png'
+            },
+           
+          ]
           },
 
           {"name_super_sub" : "Account book",
