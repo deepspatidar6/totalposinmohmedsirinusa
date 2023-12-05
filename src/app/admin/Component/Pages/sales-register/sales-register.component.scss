@@ -3,6 +3,21 @@
     border-radius: 2%;
 
 }
+.super_chaild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+
+.text_routes{
+    text-decoration: none;
+    color: #51459d;
+  }
+  .text_routes:hover{
+    color: #6FD943;
+  }
 
 .span1 {
     background-color: #f7e6e6;
@@ -45,20 +60,7 @@
 
 }
 
-// .add_icon {
-//     height: 30px;
-//     width: 30px;
-//     background-color: #704d7c;
-//     border-radius: 9px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
 
-// }
-
-// .add_icon i {
-//     color: #FFF;
-// }
 
 .textfile_icon {
     height: 30px;
@@ -75,19 +77,6 @@
     color: #FFF;
 }
 
-.edit_icon {
-    height: 30px;
-    width: 30px;
-    background-color: #70d843;
-    border-radius: 9px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.edit_icon i {
-    color: #FFF;
-}
 
 .parent_div {
     display: flex;
@@ -161,3 +150,10 @@
     background-color: #db0909;
 
 }
+
+.super_chaild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }

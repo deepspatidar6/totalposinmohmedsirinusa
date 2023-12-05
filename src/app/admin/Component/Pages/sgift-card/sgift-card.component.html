@@ -1,0 +1,212 @@
+<div class="container my-4 ">
+    <div class="prant_div">
+        <div class="fast_div">
+            <div class="super_chaild">
+                <mat-icon>density_medium</mat-icon>
+                <img src="./assets/logos/gift-card.png" class="salesicon" style="width: 3vw;">
+                <span class="fs-4"> Gift Cards</span>
+            </div>
+            <div>
+                <a class="text_routes" routerLink="/admin"> Dashboard </a>
+                <i class="ri-arrow-right-s-line"></i> Gift Cards
+            </div>
+        </div>
+        <div class="secoand_div">
+
+            <button mat-raised-button matTooltip="Filter.." class="demo-button">
+
+                <i class="ri-filter-2-fill"></i>
+
+            </button>
+            <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 "
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <mat-icon>density_medium</mat-icon>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+                <li><a class="dropdown-item" href="#">Company website </a></li>
+            </ul>
+            <button mat-raised-button class="demo-button ">
+                <i class="ri-printer-line fs-5"></i>
+            </button>
+            <button mat-raised-button matTooltip="Add" class="demo-button ms-2">
+                <i class="ri-add-line fs-5 "></i>
+                <!-- fitter -->
+            </button>
+        </div>
+    </div>
+    <hr />
+    <!-- form -->
+
+    <!-- 
+    <mat-form-field style="height: 100%; width: 100%;" >
+        <mat-label>Search</mat-label>
+       <input matInput  placeholder="Ex. ium"  #input>
+       </mat-form-field>  -->
+
+
+
+    <div class="container c1 py-3">
+
+
+        <div class="container c1 my-3 py-2">
+            <h5>Gift cards</h5>
+            <h5>Default expiration</h5>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 my-2">
+                    <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1"> Gift cards never expire
+                    <br>
+                    <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1"
+                        data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false"
+                        aria-controls="collapseExample"> Gift cards expire
+                </div>
+                <!--Gift cards expire modal -->
+
+                <p>
+
+
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="height: 57px;">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12"><input class="form-control" type="number"
+                                    placeholder="Default input" aria-label="default input example"> </div>
+                            <div class="col-md-6 col-sm-12">
+
+                                <select class="form-select" id="specificSizeSelect">
+                                    <option selected>Years</option>
+                                    <option value="1">Months</option>
+                                    <option value="2">Days</option>
+
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ============== -->
+
+                <div class="container py-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-sm-12 py-2 mt-2">
+                            <div class="card">
+                                <img src="./assets/logos/gift-card.png" class="card-img-top" alt="gift" style="width: 80px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Send by default</h5>
+                                    <p class="card-text">
+                                        <input class="form-check mr-2" style="float: left;" type="checkbox" value="" id="flexCheckDefault">
+                                        &nbsp;
+                                        <span>Preselect “Send gift card now” when manually creating gift cards</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 py-2 mt-2">
+                            <div class="card">
+                                <img src="./assets/logos/gift-card(2).png" class="card-img-top p-1" alt="gift" style="width: 80px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Apple Wallet Passes</h5>
+                                    <p class="card-text">
+                                        <input class="form-check" style="float: left;" type="checkbox" value="" id="flexCheckDefault2">
+                                        &nbsp;
+                                        Activate Apple Wallet Passes for gift cards
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 py-2 mt-2">
+                            <div class="card">
+                                <img src="./assets/logos/gift-card(3).png" class="card-img-top" alt="gift" style="width: 80px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">Samsung Wallet</h5>
+                                    <p class="card-text">
+                                        <input class="form-check" style="float: left;" type="checkbox" value="" id="flexCheckDefault3">
+                                        &nbsp;
+                                        Activate Samsung Wallet Passes for gift cards
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============== -->
+
+
+                <!--Gift cards expire  end-->
+               
+            </div>
+
+            <!-- Button trigger modal -->
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end my-3">
+                <button class="btn btn-primary me-md-2 Btn_Save" type="button">Save</button>
+                <button class="btn Btn_Close" type="button">Cancel</button>
+            </div>
+
+           
+        </div>
+
+
+    </div>
+
+
+
+
+    <div class="container">
+        <div class="row my-3 ">
+            <!-- <div class="prant_div"> -->
+            <!-- <div class="new_dropdown"> -->
+            <div class="col-md-4 col-sm-12">
+                <div class="input-group mb-3  mx-auto">
+                    <button type="button" class="btn btn-outline-secondary">10</button>
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">15</a></li>
+                        <li><a class="dropdown-item" href="#">25</a></li>
+                        <li><a class="dropdown-item" href="#">50</a></li>
+                        <li><a class="dropdown-item" href="#">100</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="d-grid ga d-md-flex justify-content-md-center">
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-outline-secondary"> 1</button>
+                            <button type="button" class="btn btn-outline-secondary">2</button>
+                            <button type="button" class="btn btn-outline-secondary">3</button>
+                            <button type="button" class="btn btn-outline-secondary">4</button>
+                            <button type="button" class="btn btn-outline-secondary">5</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="d-grid ga d-md-flex justify-content-md-end">
+                    <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                            <button type="button" class="btn btn-outline-secondary ">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div>
+        </div> -->
+            </div>
+        </div>
+
+    </div>
+</div>

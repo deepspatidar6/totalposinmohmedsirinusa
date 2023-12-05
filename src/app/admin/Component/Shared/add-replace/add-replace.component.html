@@ -1,0 +1,151 @@
+<!-- modal Repalce -->
+
+
+
+<div class="container">
+
+
+    <span mat-dialog-title>
+        <div class="set_header">
+            <div class="d-flex align-items-center">
+                <img src="./assets/payment/replace.png" style="height: 5vh;" alt="" srcset="">
+                <h4 class="text-capitalize fs-4 mx-2" style="font-family: Arial, Helvetica, sans-serif;"> Add
+                    Credit/Debit card</h4>
+            </div>
+            <div>
+                <button align="end" type="button" [mat-dialog-close]="true" class="btn-close"
+                    aria-label="Close"></button>
+            </div>
+        </div>
+    </span>
+
+
+
+    <mat-divider></mat-divider>
+    <mat-dialog-content class="mat-typography">
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="text-dark">Add Card Detail</h3>
+                <div class="container c1">
+
+                    <div class="row">
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;">
+                            <div class="row">
+
+                                <div class="col-md-7 col-sm-12">
+                                    <label class="" for="specificSizeSelect">CARD NUMBER:</label>
+                                </div>
+
+                                <div class="col-md-5 col-sm-12 ">
+                                    <div class="d-flex mt-2  ">
+                                        <img src="./assets/payment/visa.png" alt="" class="IMG_SIZE">
+                                        <img src="./assets/payment/master.png" alt="" class="IMG_SIZE">
+                                        <img src="./assets/payment/american-express.png" alt="" class="IMG_SIZE">
+                                        <img src="./assets/payment/search.png" alt="" class="IMG_SIZE">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <input type="text" class="form-control" placeholder="💳 0000 0000 0000 0000 📷">
+                        </div>
+
+
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">EXP. DATE:</label>
+                            <input type="" class="form-control" placeholder="MM/YY ">
+                        </div>
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">CVV:</label>
+                            <input type="password" class="form-control" placeholder=" ">
+                        </div>
+
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">ZIP CODE:</label>
+                            <input type="text" class="form-control" placeholder=" ">
+                        </div>
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">NAME ON CARD:</label>
+                            <input type="password" class="form-control" placeholder=" ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card mt-2">
+            <div class="card-body">
+
+
+                <h3 class="text-dark">Billing Address</h3>
+                <div class="container c1">
+
+                    <div class="row">
+
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">COUNTRY/REGION:</label>
+                            <input type="" class="form-control" placeholder=" ">
+                        </div>
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">FIRST NAME:</label>
+                            <input type="text" class="form-control" placeholder=" ">
+                        </div>
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">LAST NAME:</label>
+                            <input type="text" class="form-control" placeholder=" ">
+                        </div>
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">CITY:</label>
+                            <input type="text" class="form-control" placeholder=" ">
+                        </div>
+
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">COUNTRY:</label>
+                            <input type="text" class="form-control" placeholder=" ">
+                        </div>
+                        <div class="  col-md-4 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">ZIP CODE:</label>
+                            <input type="text" class="form-control" placeholder=" ">
+                        </div>
+
+                        <div class="  col-md-12 col-sm-12" style="line-height: 2rem;  ">
+
+                            <label class="" for="specificSizeSelect">ADDRESS:</label>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Leave a comment here"
+                                    id="floatingTextarea"></textarea>
+                                <label for="floatingTextarea">Comments</label>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </mat-dialog-content>
+    <mat-divider></mat-divider>
+    <mat-dialog-actions align="end">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <div class=" Btn_Save" type="button">Save</div>
+            <div mat-dialog-close class="Btn_Close">Cancel</div>
+        </div>
+    </mat-dialog-actions>
+
+
+</div>

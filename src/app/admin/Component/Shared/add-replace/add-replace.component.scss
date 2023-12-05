@@ -1,0 +1,86 @@
+.c1 {
+    background-color: white;
+    // border-radius: 3%;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: 1px solid rgb(221, 212, 212);
+}
+
+
+
+.s1 {
+    background-color: rgb(215, 243, 215);
+    color: green;
+    // border-radius: 20%;
+}
+
+.Btn_Save {
+    background-color: #0A1E3C;
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Btn_Save:hover {
+    background-color: rgb(21, 201, 21);
+    color: #FFF;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+  }
+  
+  .Btn_Close {
+    border: 1px solid #0A1E3C;
+    color: #0A1E3C;
+    padding: 10px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+  }
+  
+  
+  .Btn_Close:hover {
+    background-color: #0A1E3C;
+   color: #FFF;
+  
+  }
+
+.IMG_SIZE {
+    height: 2.5vh;
+    width: 2.5vw;
+}
+
+.radioB {
+    margin-top: 6rem;
+}
+
+.set_header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+
+  .color_red{
+    color: red;
+  }

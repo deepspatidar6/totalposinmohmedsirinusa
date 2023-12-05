@@ -1,0 +1,120 @@
+
+<div class="container my-4">
+
+    <div class="prant_div">
+        <div class="fast_div">
+            <div class="super_chaild">
+                <mat-icon>density_medium</mat-icon>
+                <img src="./assets/logos/splan.png" class="salesicon" style="width: 3vw;">
+                <span class="fs-4"> Plan</span>
+            </div>
+            <div>
+                <a class="text_routes" routerLink="/admin"> Dashboard </a>
+                <i class="ri-arrow-right-s-line"></i> Plan
+            </div>
+        </div>
+        <div class="secoand_div">
+
+            <button mat-raised-button matTooltip="Filter.." class="demo-button">
+
+                <i class="ri-filter-2-fill"></i>
+
+            </button>
+            <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 "
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <mat-icon>density_medium</mat-icon>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+                <li><a class="dropdown-item" href="#">Company website </a></li>
+            </ul>
+            <button mat-raised-button class="demo-button ">
+                <i class="ri-printer-line fs-5"></i>
+            </button>
+            <button mat-raised-button matTooltip="Add" class="demo-button ms-2">
+                <i class="ri-add-line fs-5 "></i>
+                <!-- fitter -->
+            </button>
+        </div>
+    </div>
+
+<hr>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-10 my-2">
+         
+            <h5 class="mt-3">Plan details</h5>
+            <span>
+                Manage or change your subscription. View our <a href="">terms of service</a> and <a href="">privacy
+                    policy.</a>
+            </span>
+
+        </div>
+
+
+    </div>
+
+    <div class="container c1 my-3 py-2">
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-sm-8 my-2">
+                <h5>Starter</h5>
+
+                <span class="my-5">The simplest way to start selling through social and messaging apps</span>
+            </div>
+
+            <div class="col-md-4 col-sm-8">USD
+
+                <span style="font-size: xx-large;">$60.00</span>
+                /yr
+            </div>
+            <div class="col-md-8 col-sm-8 my-2">
+                <h5> Your plan includes </h5>
+
+            </div>
+            <div class="col-md-4 col-sm-8 ">
+                <a href="">Show all features</a>
+            </div>
+            <div class="col-md-8 col-sm-8 my-2">
+                <ul style="list-style: none;">
+                    <li><i class="fa-sharp fa-regular fa-circle-check" style="color: rgb(30, 80, 37);"></i> 5% + $0.30 online credit card rates</li>
+                    <li><i class="fa-sharp fa-regular fa-circle-check" style="color: rgb(30, 80, 37);"></i> 5% + $0.00 in-person credit card fees</li>
+                    <li><i class="fa-sharp fa-regular fa-circle-check" style="color: rgb(30, 80, 37);"></i> 0 staff members</li>
+                    <li><i class="fa-sharp fa-regular fa-circle-check" style="color: rgb(30, 80, 37);"></i> Shipping discounts</li>
+                    <li><i class="fa-sharp fa-regular fa-circle-check" style="color: rgb(30, 80, 37);"></i> Shareable product pages</li>
+                </ul>
+            </div>
+
+            <div class="col-md-8 col-sm-8 my-2">
+                <h5>Billing cycle </h5>
+
+                Yearly for $60.00 USD.
+            </div>
+            <div class="col-md-4 col-sm-8 "><a  routerlink="/paymententry" >Change billing cycle</a></div>
+            <hr>
+            <div class="col-md-8 col-sm-8 my-2">
+                <h5>Payment method</h5>
+
+                <img src="./assets/logos/visa.png" alt="visa" width="40vw">
+
+                Visa ending in 5324
+            </div>
+            <div class="col-md-4 col-sm-8"><a href="">Change payment method</a></div>
+            <hr>
+            <div class="col-md-12 col-sm-12 my-2">
+            <div class="float-end">
+                <button type="button" class="btn  btn-outline-danger ">Deactive store</button>
+                &nbsp;
+               <button type="button" class="btn btn-secondary "  (click)="add_selectplan()" >Change plan</button>
+            </div>
+        </div>
+        </div>
+
+
+
+    </div>
+
+</div>

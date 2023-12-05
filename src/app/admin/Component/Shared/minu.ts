@@ -15,6 +15,15 @@ export  const Sub_Menu = [
             "routes" : "/admin/product",
             "img" : 'new-product.png'
             } ,
+            {"name_super_sub" : "Plans",
+            "routes" : "/admin/setting/plan",
+            "img" : 'new-product.png'
+            } ,
+            {"name_super_sub" : "Billings",
+            "routes" : "/admin/setting/billing",
+            "img" : 'new-product.png'
+            } ,
+            
    
             {  "name_super_sub" : "Departments ",
             "routes" : "/admin/department",
@@ -869,7 +878,22 @@ export  const Sub_Menu = [
         'super_manu' : [
           {"name_super_sub" : "Account Statements",
           "routes" : "/admin/",
-          "img" : 'marketing-mix.png'
+          "img" : 'marketing-mix.png',
+          "last_menu" : [
+            { "name_super_sub_last" : "Creditors Outstanding Report",
+              "routes" : "/admin/",
+              "img" : 'marketing-mix.png'
+           },
+           { "name_super_sub_last" : "Debitors Outstanding Report ",
+            "routes" : "/admin/",
+            "img" : 'marketing-mix.png'
+           },
+           { "name_super_sub_last" : "Ledger Outstanding Report",
+           "routes" : "/admin/bankbook",
+           "img" : 'marketing-mix.png'
+            },
+           
+          ]
           },
 
           {"name_super_sub" : "Account book",
@@ -880,7 +904,7 @@ export  const Sub_Menu = [
               "img" : 'marketing-mix.png'
            },
            { "name_super_sub_last" : "Purchase Register ",
-            "routes" : "/admin/",
+            "routes" : "/admin/purchaseregister",
             "img" : 'marketing-mix.png'
            },
            { "name_super_sub_last" : "Bank Book",

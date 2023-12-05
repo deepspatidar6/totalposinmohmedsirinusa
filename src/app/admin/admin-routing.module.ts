@@ -30,6 +30,12 @@ import { PaymentEntryComponent } from './component/pages/payment-entry/payment-e
 import { SalesOrderPendingReportComponent } from './component/pages/sales-order-pending-report/sales-order-pending-report.component';
 import { SalesReceiptEntryComponent } from './component/pages/sales-receipt-entry/sales-receipt-entry.component';
 import { SalesRegisterComponent } from './component/pages/sales-register/sales-register.component';
+import { PurchaseRegisterComponent } from './component/pages/purchase-register/purchase-register.component';
+import { CreditorsOutstandingReportComponent } from './component/pages/creditors-outstanding-report/creditors-outstanding-report.component';
+import { SplanComponent } from './component/pages/splan/splan.component';
+import { AddSelectAPlanComponent } from './component/shared/add-select-a-plan/add-select-a-plan.component';
+import { SgiftCardComponent } from './component/pages/sgift-card/sgift-card.component';
+import { SchangesBillingComponent } from './component/pages/schanges-billing/schanges-billing.component';
 
 const routes: Routes = [
   {
@@ -127,10 +133,10 @@ const routes: Routes = [
         path : "users",
         component : UsersComponent
       },
-      {
-        path : "groupwiseoutstnading",
-        component : GroupwiseOutstandingReportComponent
-      },
+      // {
+      //   path : "groupwiseoutstnading",
+      //   component : GroupwiseOutstandingReportComponent
+      // },
       {
         path : "refunds",
         component : RefundssComponent
@@ -158,7 +164,32 @@ const routes: Routes = [
       {
         path : "salesregister",
         component : SalesRegisterComponent
-      }
+      },
+      {
+        path : "purchaseregister",
+        component : PurchaseRegisterComponent
+      },
+      // {
+      //   path : "creditorsoutstandingreport",
+      //   component : CreditorsOutstandingReportComponent
+      // },
+      {
+        path : "setting/plan",
+        component : SplanComponent
+      },
+      // {
+      //   path : "setting/selectaplan",
+      //   component : AddSelectAPlanComponent
+      // },
+      {
+        path : "setting/billing",
+        component : SchangesBillingComponent
+      },
+    
+      {
+        path : "setting/giftcard",
+        component : SgiftCardComponent
+      },
     ]
   }
 ];

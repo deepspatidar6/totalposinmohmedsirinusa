@@ -1,16 +1,47 @@
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-8 my-3">
-            <!-- <h4 class="d-inline"> Delivery Note </h4> -->
-            <h3 class="d-inline"><img src="./assets/logos/readytoshipped.jpeg" alt="image" class="salesicon" style="width: 3vw;"> Ready To Ship
-            </h3>
+<div class="container mt-4">
+    <div class="prant_div">
+        <div class="fast_div">
+          <div class="super_chaild">
+            <mat-icon>density_medium</mat-icon>
+           <img src="./assets/logos/readytoshipped.jpeg" class="salesicon" style="width: 3vw;">
+            <span class="fs-4">  Ready To Ship</span>
+          </div>
+          <div>
+            <a class="text_routes" routerLink="/admin"> Dashboard </a>
+            <i class="ri-arrow-right-s-line"></i> Ready To Ship
+          </div>
         </div>
-    </div>
-
+        <div class="secoand_div">
+    
+          <button mat-raised-button matTooltip="Filter.." class="demo-button">
+              
+              <i class="ri-filter-2-fill"></i>
+    
+          </button>
+          <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 "
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <mat-icon>density_medium</mat-icon>
+          </button>
+          <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+              <li><a class="dropdown-item" href="#">Company website </a></li>
+          </ul>
+          <button mat-raised-button class="demo-button ">
+              <i class="ri-printer-line fs-5"></i>
+          </button>
+          <button mat-raised-button matTooltip="Add" class="demo-button ms-2">
+              <i class="ri-add-line fs-5 "></i>
+              <!-- fitter -->
+          </button>
+      </div>
+      </div>
 </div>
 
+  <hr />
 
-<div class="container-fluid c1 py-3 ">
+
+
+<div class="container c1 py-3 ">
 
     <div class="row">
         <h5>ORDER INFORMATION:</h5>
@@ -37,7 +68,7 @@
 
 
 
-<div class="container-fluid c1 py-3 ">
+<div class="container c1 py-3 ">
 
     <div class="row">
 <h5>PRODUCT DETAIL:</h5>
@@ -82,7 +113,7 @@
     </div>
 </div>
 
-<div class="container-fluid c1 py-3 ">
+<div class="container c1 py-3 ">
 <h5>PACKAGING:</h5>
     <div class="row">
         <div class=" col-md-4 col-sm-12" style="line-height: 2rem;  ">
@@ -122,7 +153,7 @@
     </div>
 </div>
 
-<div class="container-fluid c1 py-3 ">
+<div class="container c1 py-3 ">
     <div class="row">
         <h5>SHIPPING METHOD:</h5>
         <div class=" col-md-4 col-sm-12" style="line-height: 2rem;  ">
@@ -165,7 +196,7 @@
 </div>
 
 
-<div class="container-fluid c1 py-3 ">
+<div class="container c1 py-3 ">
 
     <div class="row">
         <h5>DOCUMENTATION:</h5>
@@ -212,9 +243,9 @@
             <label class="" for="autoSizingInputGroup">NOTES:</label>
             <input type="text" class="form-control" id=" " placeholder="Enter Notes">
         </div>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end my-2">
-            <button class="btn btn-primary me-md-2 Btn_Save" type="button">Save</button>
-            <button class="btn btn-primary Btn_Close" type="button">Cancel</button>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end my-4">
+            <button class="btn me-md-2 Btn_Save" type="button">Save</button>
+            <button class="btn Btn_Close" type="button">Cancel</button>
         </div>
     </div>
 </div>

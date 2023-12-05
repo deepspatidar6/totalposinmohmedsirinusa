@@ -1,0 +1,155 @@
+<div class="container my-4">
+
+    <div class="prant_div">
+        <div class="fast_div">
+            <div class="super_chaild">
+                <mat-icon>density_medium</mat-icon>
+                <img src="./assets/logos/billing.png" class="salesicon" style="width: 3vw;">
+                <span class="fs-4"> Billing</span>
+            </div>
+            <div>
+                <a class="text_routes" routerLink="/admin"> Dashboard </a>
+                <i class="ri-arrow-right-s-line"></i> Billing
+            </div>
+        </div>
+        <div class="secoand_div">
+
+            <button mat-raised-button matTooltip="Filter.." class="demo-button">
+
+                <i class="ri-filter-2-fill"></i>
+
+            </button>
+            <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 "
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <mat-icon>density_medium</mat-icon>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+                <li><a class="dropdown-item" href="#">Company website </a></li>
+            </ul>
+            <button mat-raised-button class="demo-button ">
+                <i class="ri-printer-line fs-5"></i>
+            </button>
+            <button mat-raised-button matTooltip="Add" class="demo-button ms-2">
+                <i class="ri-add-line fs-5 "></i>
+                <!-- fitter -->
+            </button>
+        </div>
+    </div>
+
+
+<hr>
+
+
+</div>
+
+    <div class="container c1 my-3 py-2">
+        <h5>Add Payment Method</h5>
+        <div class=""><img src="./assets//logos/visa.png" alt="visa" style="width: 50px;"> Visa <span class="s1">Primary
+            </span>
+            ending in 5324</div>
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-outline-secondary p-2" 
+           (click)="add_billing()" >Add Payment Method</button>
+            &nbsp;
+
+        <button type="button" class="btn btn-outline-secondary " (click)="add_replace()"
+           ><img src="./assets/logos/replace.png" alt="pay" width="30px">Replace</button>
+
+
+
+    </div>
+   
+<div class="container c1 my-3 py-2">
+    <h5>Billing currency
+    </h5>
+    Your current billing currency is set to USD (US Dollar).
+
+</div>
+
+<div class="container c1 my-3 py-2">
+    <h5>Subscriptions</h5>
+
+    Items you’re billed for on a recurring basis, like your plan and apps.
+
+    <div class="row">
+        <!-- <div class="col-md-2 col-sm-12 my-3">
+            <img src="image/lo.png" alt="subs" width="120vw">
+          
+
+        </div> -->
+
+        <div class="col-md-6 col-sm-12 my-3">
+            <span style="font-size:large;"><b>Loenex Starter</b></span> <br>
+            $60.00 yearly. Renews on January 21, 2024.
+            <br> <br>
+            <input class="form-check-" type="checkbox" value="" id="flexCheckDefault"> Annual Agreement
+            Document
+            <br>
+
+            <!-- <img src="image/lon.png" alt="loenex" width="70vw">  -->
+
+            <br>
+
+
+
+
+
+        </div>
+        <a href="#">View All</a>
+
+    </div>
+</div>
+<div class="container c1 my-3 py-2">
+    <h5>Bills
+
+    </h5>
+
+    There are no charges on your upcoming bill
+
+
+</div>
+
+
+<div class="container c1 my-3 py-2">
+    <h5>Recent bills
+
+    </h5>
+
+
+    <div class="row">
+
+        <div class="col-md-3 col-sm-12">Billing cycle</div>
+
+        <div class="col-md-3 col-sm-12">Created Jan 21, 2023</div>
+        <div class="col-md-3 col-sm-12"> <span class="s1">Paid</span></div>
+        <div class="col-md-3 col-sm-12">$65.33</div>
+        <div class="col-md-4 col-sm-12">Includes annual subscription charge <br>
+            <a href="#">View all billing history</a>
+        </div>
+
+    </div>
+</div>
+
+<div class="container c1 my-3 py-2">
+    <h5>Credits</h5>
+
+    There are no credits on your account right now
+
+    Statement of charges
+
+    View a summary of all your Loenex charges for any date range within the last 90 days.
+
+
+</div>
+<div class="container c1 my-3 py-2">
+    <h5>Statement of charges</h5>
+
+    View a summary of all your Loenex charges for any date range within the last 90 days.
+    <br>
+    <a href="#">View Summary</a>
+
+
+
+
+</div>

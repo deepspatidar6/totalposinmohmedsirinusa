@@ -1,3 +1,19 @@
+
+.text_routes{
+    text-decoration: none;
+    color: #51459d;
+  }
+  .text_routes:hover{
+    color: #6FD943;
+  }
+
+.super_chaild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
 .C1 {
     background-color: white;
     border-radius: 2%;

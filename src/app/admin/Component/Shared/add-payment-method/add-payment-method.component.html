@@ -1,0 +1,98 @@
+<!-- modal Add Payment Method -->
+
+
+<mat-dialog-content class="mat-typography">
+
+<!-- Modal -->
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="card">
+
+           
+                        <div class="card-header">
+                            <div class="set_header">
+        
+                            <h1 class="text-dark fs-5 " > Add Payment Method </h1>
+
+                            <button align="end" type="button" [mat-dialog-close]="true" class="btn-close"
+                            aria-label="Close"></button>
+
+                        </div>
+                        </div>
+
+                      
+                        <div class="card-body">
+                            <table class="table table-hover">
+                                <tr>
+        
+                                    <td colspan="2">
+                                        <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img class="img-fluid" src="./assets/payment/credit-card.png" alt="pay" width="50px" height="50px">Add Credit/Debit Card
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <i class="fa-solid fa-building-columns fs-1 " style="font-size: 1.7rem !important;"></i>
+                                        Add Personal Checking Account
+                                    </td>
+        
+                                </tr>
+        
+                                <tr>
+                                    <td> <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img  class="img-fluid" src="./assets/payment/Venmo.png" alt="pay" width="50px" height="50px"> Add Venmo Account
+                                    </td>
+                                    &nbsp;
+                                    <td>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img  class="img-fluid" src="./assets//payment/cashapp.jpeg" alt="pay" width="50px" height="50px"> Cash App
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td> <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img src="./assets/payment/paypal.png" alt="pay" width="100px"  height="50px">
+                                    </td>   
+                                        &nbsp;
+                                    <td> <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img  class="img-fluid" src="./assets/payment/apple.png" alt=" pay" width="70px"  height="25px">
+                                    </td>
+                                </tr>
+        
+                                <tr>
+                                    <td> <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img  class="img-fluid" src="./assets/payment/samsungpay.png" alt="pay" width="50px" height="50px"> Samsung Pay
+        
+                                    </td>
+                                    &nbsp;
+                                    <td>
+                                        <input type="radio" id="html" name="fav_language" value="HTML" class="mt-1">
+                                        <img  class="img-fluid" src="./assets/payment/Gpay.png" alt="pay" width="120px"  height="110px">
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+        
+                       <div class="card-footer">
+                        <mat-dialog-actions align="end">
+                            <button  class="Btn_Save"  type="button" >Save </button>
+                            &nbsp;
+                            <button  [mat-dialog-close]="true"class="Btn_Close" cdkFocusInitial>Cancel</button>
+                          </mat-dialog-actions>
+                       </div>
+                        
+                
+                 
+           
+        </div>
+    </div>
+</div>
+   
+    <!--end modal Add Payment Method -->
+</mat-dialog-content>
+
+    

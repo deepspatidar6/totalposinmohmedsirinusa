@@ -4,6 +4,21 @@
 
 }
 
+.text_routes{
+    text-decoration: none;
+    color: #51459d;
+  }
+  .text_routes:hover{
+    color: #6FD943;
+  }
+
+.super_chaild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
 .span1 {
     background-color: #f7e6e6;
     border-radius: 5%;
@@ -161,3 +176,10 @@
     background-color: #db0909;
 
 }
+
+.super_chaild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }

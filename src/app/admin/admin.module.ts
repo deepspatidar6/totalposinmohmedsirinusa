@@ -87,6 +87,15 @@ import { PaymentEntryComponent } from './component/pages/payment-entry/payment-e
 import { SalesOrderPendingReportComponent } from './component/pages/sales-order-pending-report/sales-order-pending-report.component';
 import { SalesReceiptEntryComponent } from './component/pages/sales-receipt-entry/sales-receipt-entry.component';
 import { SalesRegisterComponent } from './component/pages/sales-register/sales-register.component';
+import { PurchaseRegisterComponent } from './component/pages/purchase-register/purchase-register.component';
+import { CreditorsOutstandingReportComponent } from './component/pages/creditors-outstanding-report/creditors-outstanding-report.component';
+import { SplanComponent } from './component/pages/splan/splan.component';
+import { AddSelectAPlanComponent } from './component/shared/add-select-a-plan/add-select-a-plan.component';
+import { SchangeBillingComponent } from './component/shared/schange-billing/schange-billing.component';
+import { SgiftCardComponent } from './component/pages/sgift-card/sgift-card.component';
+import { AddPaymentMethodComponent } from './component/shared/add-payment-method/add-payment-method.component';
+import { SchangesBillingComponent } from './component/pages/schanges-billing/schanges-billing.component';
+import { AddReplaceComponent } from './component/shared/add-replace/add-replace.component';
 
 export function HttpLoaderFactory(_http: HttpBackend) {
   return new MultiTranslateHttpLoader(_http , [
@@ -138,6 +147,15 @@ export function HttpLoaderFactory(_http: HttpBackend) {
     SalesOrderPendingReportComponent,
     SalesReceiptEntryComponent,
     SalesRegisterComponent,
+    PurchaseRegisterComponent,
+    CreditorsOutstandingReportComponent,
+    SplanComponent,
+    AddSelectAPlanComponent,
+    SchangeBillingComponent,
+    SgiftCardComponent,
+    AddPaymentMethodComponent,
+    SchangesBillingComponent,
+    AddReplaceComponent,
     
   ],
   imports: [
