@@ -76,6 +76,8 @@ import { DebitorsOutstandingReportComponent } from './component/pages/debitors-o
 import { CreditorsOutstandingReportComponent } from './component/pages/creditors-outstanding-report/creditors-outstanding-report.component';
 import { LedgerOutstandingReportComponent } from './component/pages/ledger-outstanding-report/ledger-outstanding-report.component';
 import { CurrrenciesComponent } from './component/pages/currrencies/currrencies.component';
+import { ShippingAndDeliveryComponent } from './component/pages/shipping-and-delivery/shipping-and-delivery.component';
+import { TaxesAndDutiesComponent } from './component/pages/taxes-and-duties/taxes-and-duties.component';
 
 
 const routes: Routes = [
@@ -262,6 +264,8 @@ const routes: Routes = [
         path :"outofstockreport",
         component : OutOfStockReportComponent
       },
+
+      //empty component
       {
         path : "stocksummaryreport",
         component : StockSummaryReportComponent
@@ -282,6 +286,7 @@ const routes: Routes = [
         path : "ungroupcompilationitems",
         component : UngroupCompilationItemsComponent
       },
+      //need to fix styling
       {
         path : "inventoryscanningreport",
         component : InventoryScanningReportComponent
@@ -310,10 +315,12 @@ const routes: Routes = [
            path : "variancesproductionqualitiesreport",
            component: VariancesProductionQualitiesReportComponent
       },
+      // need to fix style
       {
         path : "productionreceivesreport",
         component : ProductionReceivesReportComponent
       },
+      // empty component
       {
         path : "productcomponents",
         component : ProductComponentsComponent
@@ -342,6 +349,7 @@ const routes: Routes = [
         path : "netexpense",
         component: NetExpenseComponent
       },
+      // form
       {
         path : "cancelledorder",
         component: CancelledOrderComponent
@@ -393,6 +401,14 @@ const routes: Routes = [
       {
         path : "setting/currencies",
         component: CurrrenciesComponent
+      },
+      {
+        path :"setting/shippinganddelivery",
+        component: ShippingAndDeliveryComponent
+      },
+      {
+        path : "setting/taxesandduties",
+        component : TaxesAndDutiesComponent
       }
       
     ]

@@ -141,6 +141,7 @@ import { CreditorsOutstandingReportComponent } from './component/pages/creditors
 import { LedgerOutstandingReportComponent } from './component/pages/ledger-outstanding-report/ledger-outstanding-report.component';
 import { CurrrenciesComponent } from './component/pages/currrencies/currrencies.component';
 import { ShippingAndDeliveryComponent } from './component/pages/shipping-and-delivery/shipping-and-delivery.component';
+import { TaxesAndDutiesComponent } from './component/pages/taxes-and-duties/taxes-and-duties.component';
 
 
 export function HttpLoaderFactory(_http: HttpBackend) {
@@ -252,6 +253,7 @@ export function HttpLoaderFactory(_http: HttpBackend) {
     LedgerOutstandingReportComponent,
     CurrrenciesComponent,
     ShippingAndDeliveryComponent,
+    TaxesAndDutiesComponent,
     
   ],
   imports: [

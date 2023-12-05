@@ -25,6 +25,14 @@ export  const Sub_Menu = [
             "routes" : "/admin/setting/currencies",
             "img" : 'network.png'
              },
+             {  "name_super_sub" : "Shipping and delivery",
+            "routes" : "/admin/setting/shippinganddelivery",
+            "img" : 'network.png'
+             },
+             {  "name_super_sub" : "Taxes and Duties",
+             "routes" : "/admin/setting/taxesandduties",
+             "img" : 'network.png'
+              },
             //  {  "name_super_sub" : "Tables ",
             //  "routes" : "/admin/department",
             //  "img" : 'dinner-table.png'
