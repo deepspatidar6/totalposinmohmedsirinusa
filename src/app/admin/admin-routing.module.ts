@@ -70,6 +70,14 @@ import { SalesReturnInvoiceComponent } from './component/sales-return-invoice/sa
 import { SalesReturnInvoiceUpdatedComponent } from './component/pages/sales-return-invoice-updated/sales-return-invoice-updated.component';
 import { PurchseBillEntryComponent } from './component/pages/purchse-bill-entry/purchse-bill-entry.component';
 import { PurchaseOrderBookReportComponent } from './component/pages/purchase-order-book-report/purchase-order-book-report.component';
+import { SaleOrderBookComponent } from './component/pages/sale-order-book/sale-order-book.component';
+import { ReturnPackageBoxComponent } from './component/pages/return-package-box/return-package-box.component';
+import { SbillingComponent } from './component/pages/sbilling/sbilling.component';
+import { SCurrenciesComponent } from './component/pages/s-currencies/s-currencies.component';
+import { MarketComponent } from './component/pages/market/market.component';
+import { NotificationComponent } from './component/pages/notification/notification.component';
+import { PoliciesComponent } from './component/pages/policies/policies.component';
+import { LanguagesComponent } from './component/pages/languages/languages.component';
 
 const routes: Routes = [
   {
@@ -359,6 +367,38 @@ const routes: Routes = [
         path : "purchaseorderbookreport",
         component : PurchaseOrderBookReportComponent
       },
+      {
+        path: "saleorderbook",
+        component: SaleOrderBookComponent
+      },
+      {
+        path: "returnpackagebox",
+        component: ReturnPackageBoxComponent
+      },
+      {
+        path: "sbilling",
+        component: SbillingComponent
+      },
+      {
+        path: "setting/currencies",
+        component: SCurrenciesComponent
+      },
+      {
+        path: "setting/market",
+        component: MarketComponent
+      },
+      {
+        path: "setting/notification",
+        component: NotificationComponent
+      },
+      {
+        path: "setting/policies",
+        component: PoliciesComponent
+      },
+      {
+        path: "setting/languages",
+        component:LanguagesComponent
+      }
     ]
   }
 ];

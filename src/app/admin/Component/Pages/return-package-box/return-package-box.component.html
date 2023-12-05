@@ -1,0 +1,204 @@
+<div class="container my-4 ">
+    <div class="prant_div">
+      <div class="fast_div">
+        <div class="super_chaild">
+          <mat-icon>density_medium</mat-icon>
+          <img src="../../../../../assets/submenu/vendor (1).png" height="32" width="32" />
+          <span class="fs-4">Return Package</span>
+        </div>
+        <div>
+          <a class="text_routes" routerLink="/admin"> Dashboard </a>
+          <i class="ri-arrow-right-s-line"></i>Return Package
+        </div>
+      </div>
+      <div class="secoand_div">
+        <button mat-raised-button matTooltip="Filter.." class="demo-button " data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="ri-filter-2-fill"></i>
+        </button>
+        <ul class="dropdown-menu p-3">
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Name</label>
+              <select class="form-select " aria-label=".form-select-sm example">
+                <option selected>Open this select name</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Email</label>
+              <select class="form-select" aria-label=".form-select-sm example">
+                <option selected>Open this select Email</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Phone Number</label>
+              <select class="form-select " aria-label=".form-select-sm example">
+                <option selected>Open this select Phone Number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+  
+        <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 " data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <mat-icon>density_medium</mat-icon>
+        </button>
+  
+        <ul class="dropdown-menu">
+  
+          <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+          <li><a class="dropdown-item" href="#">Company website </a></li>
+        </ul>
+  
+        <button mat-raised-button matTooltip="Print" class="demo-button mx-2">
+          <i class="ri-printer-fill"></i>
+        </button>
+  
+        <button mat-raised-button matTooltip="Add" (click)="add_returnpackage()" class="demo-button ">
+          <i class="ri-add-line fs-4"></i>
+        </button>
+      </div>
+  
+    </div>
+    <hr />
+    <div class="card row">
+      <div class="col-md-12 col-sm-12 set_scroller">
+        <table class="table  table-hover">
+          <thead>
+            <tr style="border:none">
+              <th>
+                <span>
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                </span>
+              </th>
+              <th scope="col" class="text-center text-uppercase">INVOICE NO</th>
+              <th scope="col" class="text-center text-uppercase">PRODUCT</th>
+              <th scope="col" class="text-center text-uppercase"> QTY</th>
+              <th scope="col" class="text-center text-uppercase">PRICE </th>
+              <th scope="col" class="text-center text-uppercase">AMOUNT</th>
+              <th scope="col " style="text-align: center;">DATE</th>
+              <th scope="col " style="text-align: center;">STATUS</th>
+              <th scope="col " style="text-align: center;">ACTION</th>
+            </tr>
+          </thead>
+  
+          <tbody style="text-align: center;">
+            <tr *ngFor="let p of ELEMENT_DATA ; ">
+              <td class="mt-4">
+                <span>
+                  <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+                </span>
+              </td>
+              <td>
+                    <div style="width: 200px;" class="text_decoreion p-2 border border-1 rounded ">{{p.invoice_no}}</div>
+              </td>
+  
+              <td>
+                <div style="width: 150px;" class="text_decoreion border border-1 rounded p-2 ">
+                  {{p.product}}</div>
+              </td>
+              <td>        
+                <div class="d-flex justify-content-center ">
+                  <div class="py-2 px-3 border rounded-start set_color"><i class="ri-subtract-line "></i></div>
+                  <div class="py-2 px-3 border ">0</div>
+                  <div class="py-2 px-3 border set_color rounded-end"><i class="ri-add-line"></i></div>
+                </div>
+              </td>
+              <td>
+                <div style="width: 150px;" class="text_decoreion border border-1 rounded py-2  ">{{p.price}}</div>
+              </td>
+  <!-- balance -->
+              <td>
+                <div style="width: 150px;" class="text_decoreion border border-1 rounded py-2  ">{{p.amount | currency}}</div>
+              </td>
+              <td>
+                <div style="width: 150px;" class="text_decoreion border border-1 rounded py-2  ">{{p.DATE}}</div>
+              </td>
+              <td><input id="s1" type="checkbox" class="switch"></td>
+
+  <!-- icons start -->
+              <td class="mt-1">
+                <div class="parent_div">
+                  <div class="add_icon" matTooltip="copy" aria-label="Example icon button with a menu icon">
+                    <i class="ri-file-add-line"></i>
+                  </div>
+                  <div class="view_icon mx-2" matTooltip="View">
+                    <i class="ri-eye-line"></i>
+                  </div>
+                  <div class="edit_icon" matTooltip="Edit">
+                    <i class="ri-pencil-line"></i>
+                  </div>
+                  <div class="delete_icon mx-2" matTooltip="Delete" aria-label="Example icon button with a menu icon">
+                    <i class="ri-delete-bin-6-line "></i>
+                  </div>
+                  <div class="print_icon" matTooltip="Print" aria-label="Example icon button with a menu icon">
+                    <i class="ri-printer-fill"></i>
+                  </div>
+                </div>
+              </td>
+
+
+  <tr>
+    <td></td>
+    <td class="mx-1"> TOTAL BALANCE</td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+    <td class="text-center">400.00 $</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr>
+    <td></td>
+    <td class="mx-1">TAX</td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+    <td class="text-center">22.00 $</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+<tr>
+    <td></td>
+    <td class="mx-1">TOTAL</td>
+    <td></td>
+    <td></td>
+    <td></td>
+
+    <td class="text-center">3600.00 $</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+</tr>
+
+      <!-- icons end-->
+
+            
+              <!-- icons end-->
+            
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>

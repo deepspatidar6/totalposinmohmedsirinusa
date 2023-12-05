@@ -15,16 +15,10 @@ export  const Sub_Menu = [
             "routes" : "/admin/mene/product",
             "img" : 'new-product.png'
             } ,
-   
             {  "name_super_sub" : "Departments ",
             "routes" : "/admin/department",
             "img" : 'network.png'
              },
-            //  {  "name_super_sub" : "Tables ",
-            //  "routes" : "/admin/department",
-            //  "img" : 'dinner-table.png'
-            //   },
-   
             {"name_super_sub" : " Categories",
             "routes" : "/admin/product/categories",
             "img" : 'grid.png'
@@ -43,14 +37,6 @@ export  const Sub_Menu = [
              "routes" : "/admin/product/warranties",
              "img" : 'warranty.png'
             } ,
-            // {"name_super_sub" : "Import Products",
-            // "routes" : "/admin/product/importproduct",
-            //  "img" : 'import.png'
-            // } ,
-            // {"name_super_sub" : " Export Product",
-            // "routes" : "",
-            // "img" : 'product.png'
-            // } ,
             {"name_super_sub" : " Print Barcodes",
             "routes" : "",
             "img" : 'barcode-scanner.png'
@@ -432,10 +418,16 @@ export  const Sub_Menu = [
           "routes" : "/admin/",
           "img" : 'paper.png'
           },
+
           {"name_super_sub" : "Preparation Order",
           "routes" : "/admin/",
           "img" : 'online-order.png'
           },
+          {"name_super_sub" : "Sale Order Report",
+          "routes" : "/admin/saleorderbook",
+          "img" : 'online-order.png'
+          },
+   
           {"name_super_sub" : "Sales Invoice",
           "routes" : "/admin/",
           "img" : 'sale.png'
@@ -1439,7 +1431,7 @@ export  const Sub_Menu = [
             "img" : 'marketing-mix.png'
            },
            { "name_super_sub_last" : "Return Package ",
-            "routes" : "/admin/",
+            "routes" : "/admin/returnpackagebox",
             "img" : 'marketing-mix.png'
            },
           ]

@@ -1,0 +1,802 @@
+<div class="container my-4 ">
+    <div class="prant_div">
+      <div class="fast_div">
+        <div class="super_chaild">
+          <mat-icon>density_medium</mat-icon>
+          <img src="../../../../../assets/logos/notification.png" height="32" width="32" />
+          <span class="fs-4">Notification</span>
+        </div>
+        <div>
+          <a class="text_routes" routerLink="/admin"> Dashboard </a>
+          <i class="ri-arrow-right-s-line"></i>Notification
+        </div>
+      </div>
+      <div class="secoand_div">
+        <button mat-raised-button matTooltip="Filter.." class="demo-button " data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="ri-filter-2-fill"></i>
+        </button>
+        <ul class="dropdown-menu p-3">
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Name</label>
+              <select class="form-select " aria-label=".form-select-sm example">
+                <option selected>Open this select name</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Email</label>
+              <select class="form-select" aria-label=".form-select-sm example">
+                <option selected>Open this select Email</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Phone Number</label>
+              <select class="form-select " aria-label=".form-select-sm example">
+                <option selected>Open this select Phone Number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+  
+        <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 " data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <mat-icon>density_medium</mat-icon>
+        </button>
+  
+        <ul class="dropdown-menu">
+  
+          <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+          <li><a class="dropdown-item" href="#">Company website </a></li>
+        </ul>
+  
+        <button mat-raised-button matTooltip="Print" class="demo-button mx-2">
+          <i class="ri-printer-fill"></i>
+        </button>
+  
+        <button mat-raised-button matTooltip="Add"  class="demo-button ">
+          <i class="ri-add-line fs-4"></i>
+        </button>
+      </div>
+  
+    </div>
+    <hr/>
+
+    
+      <div class="col-md-12 col-sm-12 set_scroller">
+
+            <div class="container ">
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 my-3">
+                        <h5  >Customer Notifications</h5>
+                       
+        <p style="color: rgb(83, 82, 82);"> Email and select SMS notifications are automatically sent out to customers. Click the notification title links below to view or edit the content. See also the help documentation for <a href="">notification variables.</a></p>
+        
+                    </div>
+                </div>
+                </div>
+
+        <!-- <div class="container"> -->
+                <div class=" c1 my-3 py-2 " >
+                    <h5>Customize email templates</h5>
+                   <p>Change the look and feel of email notifications your customers receive. Add your logo and color theme.</p>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-outline-secondary py-2" data-bs-toggle="modal"
+                        data-bs-target="">Customize email templates</button>
+                </div>
+            <!-- </div> -->
+            
+        
+            <div class=" c1 my-3 py-2">
+                <h5>Sender email
+                </h5>
+                The email your store uses to send emails to your customers.
+                <input class="form-control my-3" type="search" placeholder=" Support@loenex.com " aria-label="Search" style="border: 1px solid black;">
+                <p>Because your email domain hasn’t been authenticated, recipients may see your email sent via <b>Support@loenex.com </b>. For better brand recognition, <u>authenticate your domain.</u></p>
+               <!-- temove div + ul -->
+               </div>
+        
+            <div class=" c1 my-3 py-2">
+                <h5>Orders</h5>
+        
+              
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="row" colspan="2"> <a href="">Order confirmation</a></th>
+                        <td scope="col">
+                            Sent automatically to the customer after they place their order.</td>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Order edited</a></th>
+                        <td>Sent to the customer after their order is edited (if you select this option).
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Order edited</a></th>
+                        <td>Sent to the customer after their order is edited (if you select this option).
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Order invoice</a></th>
+                        <td>
+                            Sent to the customer when the order has an outstanding balance.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Order cancelled</a></th>
+                        <td>
+                            Sent automatically to the customer if their order is cancelled (if you select this option).
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Order payment receipt</a></th>
+                        <td>Sent automatically to the customer after you charge their saved payment method.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Order refund</a></th>
+                        <td>
+                            Sent automatically to the customer if their order is refunded (if you select this option).
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Draft order invoice</a></th>
+                        <td>
+                            Sent to the customer when a draft order invoice is created. You can edit this email invoice before you send it.
+                            
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Abandoned POS checkout
+                        </a></th>
+                        <td>
+                            Sent to the customer when you email their cart from POS. Includes a link to buy online
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">POS and mobile receipt</a></th>
+                        <td>Sent to the customer after they complete an in person order and want to be emailed a receipt.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">POS exchange receipt</a></th>
+                        <td>
+                            Sent to the customer after they complete an exchange in person and want to be emailed a receipt
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">POS exchange V2 receipt</a></th>
+                        <td>
+                            Sent to the customer after they complete an exchange V2 in person and want to be emailed a receipt.
+                            
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Payment error</a></th>
+                        <td>
+                            Sent automatically to the customer if their payment can’t be processed during checkout.
+                            
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Pending payment error</a></th>
+                        <td>
+                            Sent automatically to the customer if their pending payment can't be processed after they have checked out. Learn more about <a href="">pending payments</a>.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Pending payment success
+                        </a></th>
+                        <td>
+                            Sent automatically to the customer when their pending payment is successfully processed after they have checked out. Learn more about<a href="">pending payments</a>.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Payment reminder</a></th>
+                        <td>
+                            Sent automatically to the customer on or after the due date for unpaid orders. <br> <a href="">Manage payment reminders</a>
+                        </td>
+                       
+                      </tr>
+                     
+        
+                     
+                    </tbody>
+                  </table>
+            </div>
+            <div class=" c1 my-3 py-2">
+                <h5>Shipping</h5>
+        
+                
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="row" colspan="2"> <a href=""> Fulfillment request</a></th>
+                        <td scope="col">
+                            Sent automatically to a third-party fulfillment service provider when order items are fulfilled.</td>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Shipping confirmation
+                        </a></th>
+                        <td>Sent automatically to the customer when their order is fulfilled (if you select this option).
+        
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Shipping update
+                        </a></th>
+                        <td>
+                            Sent automatically to the customer if their fulfilled order’s tracking number is updated (if you select this option).
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Out for delivery</a></th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+                          Sent to the customer automatically after orders with tracking information are out for delivery.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Delivered
+                        </a></th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> Sent to the customer automatically after orders with tracking information are delivered.
+                        </td>
+                       
+                      </tr>
+                    
+                     
+                     
+        
+                     
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class=" c1 my-3 py-2">
+                <h5>Local Delivery</h5>
+        
+                
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="row" > <a href="">  Local order out for delivery</a></th>
+                        <td scope="col">  
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+                   Sent to the customer when their local order is out for delivery.
+                      </td>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" ><a href="">Local order delivered
+                        </a></th>
+                        <td> <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">  Sent to the customer when their local order is delivered.
+        
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" ><a href="">Local order missed delivery
+        
+                        </a></th>
+                        <td>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">    Sent to the customer when they miss a local delivery.
+        
+                        </td>
+                       
+                   
+                     
+                     
+        
+                     
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class=" c1 my-3 py-2">
+                <h5>Local Pickup</h5>
+        
+                
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="row" colspan="2"> <a href="">  Ready for pickup</a></th>
+                        <td scope="col">  
+                            
+                         Sent to the customer manually through Point of Sale or admin. Lets the customer know their order is ready to be picked up.
+                      </td>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Picked up
+                        </a></th>
+                        <td>
+                            Sent to the customer when the order is marked as picked up.
+        
+                        </td>
+                       
+                      </tr>
+                      
+                       
+                   
+                     
+                     
+        
+                     
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="container c1 my-3 py-2">
+                <h5>Customer</h5>
+        
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="row" colspan="2"> <a href="">Customer account invite
+                        </a></th>
+                        <td scope="col">
+                           
+        Sent to the customer with account activation instructions. You can edit this email before you send it.
+        </td>
+                      
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Customer account welcome</a></th>
+                        <td>Sent automatically to the customer when they complete their account activation.
+        
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Customer account password reset
+                        </a></th>
+                        <td>Sent automatically to the customer when they ask to reset their accounts password.
+        
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Customer payment method update request</a></th>
+                        <td>
+                            Sent to the customer when they ask to update their stored payment method.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Customer payment method restore request</a></th>
+                        <td>
+                            Sent to the customer when they ask to restore their inactive payment method.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">B2B access email</a></th>
+                        <td>
+                            Sent to a customer when they are added to a company.
+                        </td>
+                       
+                      </tr>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Contact customer</a></th>
+                        <td>
+                           
+        Sent to the customer when you contact them from the orders or customers page. You can edit this email before you send it.
+        
+                        </td>
+                       
+                      </tr>
+                     
+                     
+        
+                     
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="container c1 my-3 py-2">
+                <h5>Gift Cards</h5>
+        
+                
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="row" colspan="2"><a href="">New gift card</a></th>
+                            <td>
+                               
+            
+        Sent to the customer when you choose to send a gift card you created. Also sent to the customer or recipient when a gift card bought by a customer is fulfilled.
+        
+            
+                            </td>
+                           
+                          </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Gift card receipt
+        
+                        </a></th>
+                        <td> 
+                            Sent to the customer if they add a recipient to a gift card.
+        
+                        </td>
+                       
+                      </tr>
+                      
+                       
+                   
+                      
+                     
+        
+                     
+                    </tbody>
+                  </table>
+            </div>
+
+            <div class="container c1 my-3 py-2">
+                <h5>Email marketing</h5>
+        
+                
+                <table class="table">
+                   
+                    <tbody>
+                      <tr>
+                        <th scope="row" colspan="2"><a href="">Customer marketing confirmation
+                        </a></th>
+                        <td>  Sent to the customer automatically when they sign up for email marketing (if email double opt-in is enabled).
+        
+                        </td>
+                       
+                      </tr>
+                     
+                   
+                     
+                     
+        
+                     
+                    </tbody>
+                  </table>
+
+        </div>
+
+                 <div class="container c1 my-3 py-2">
+                    <h5>Returns</h5>
+            
+                    <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="row" colspan="2"> <a href="">Return label/tracking for a return
+                            </a></th>
+                            <td scope="col">
+                               
+                                Sent when you create a return with a return label or tracking information, or when you update this information on a return.
+        
+            </td>
+                          
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row" colspan="2"><a href="">Return label for an order</a></th>
+                            <td>
+                                Sent when you create a return label for an order from the "More actions" menu. It is not connected to the return of specific items (available in the US only).
+                                
+                            </td>
+                           
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="2"><a href="">Return request confirmation
+                            </a></th>
+                            <td>Sent automatically to the customer after they have requested a return using self-serve returns.
+            
+                            </td>
+                           
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="2"><a href="">Return request approved
+                            </a></th>
+                            <td>
+                               
+        Sent to the customer when you approve a return request. Return shipping information is included (if applicable).
+                            </td>
+                           
+                          </tr>
+                          <tr>
+                            <th scope="row" colspan="2"><a href="">Return request declined</a></th>
+                            <td>
+                                
+        Sent to the customer with a message indicating why a return request was declined. You can edit the message to the customer before you send it.
+                            </td>
+                           
+                          </tr>
+                         
+                         
+                        </tbody>
+                      </table>
+                </div>
+
+                <div class="container ">
+
+
+                    <div class="row">
+                        <div class="col-sm-4 col-md-4 my-3">
+                            <h6 class="d-inline text-center">Marketing
+                            </h6>
+                            <p  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Manage consent and tracking options.</p>
+            
+            
+                        </div>
+            
+            
+                    </div>
+
+                    </div>
+
+                    <div class="container c1 my-3 py-2">
+                      <h6>Double opt-in</h6>
+                     <p> Get explicit consent from customers to send them email and SMS marketing.</p>
+                      <a href="" class="mt-0">Learn more</a>
+                      <h6>Require customers to confirm their:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                         
+                     Email subscription
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                          
+                         SMS subscription
+                        </label>
+                      </div>
+                      <div>Customers who sign up will receive a confirmation message to validate their subscription. Previous subscribers will not be affected.</div>
+        
+                    </div>
+
+
+                    <div class="container ">
+        
+                        <div class="row">
+                            <div class="col-sm-4 col-md-4 my-3">
+                                <h6 class="d-inline text-center">Staff order notifications
+                                </h6>
+                                <p  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Choose who receives order notifications. You can also subscribe to the RSS feed to see new orders for this store.</p>
+                                <button type="button" class="btn btn-primary" data-mdb-toggle="modal"
+                                data-mdb-target="#exampleModal">
+                                <i class="fa-solid fa-plus"></i>Add
+                                New
+                            </button>
+                           
+                            </div>
+                
+                
+                        </div>
+                        </div>
+
+
+                        <div class="container c1 my-3 py-2">
+                            <h5>Orders</h5>
+                    
+                            
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="row" colspan="2"> <a href="">  New order</a></th>
+                                    <td scope="col">  
+                                       
+                               
+                                       Sent to order notification subscribers when a customer places an order.
+                                  </td>
+                                  
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" colspan="2"><a href="">New return request
+                                    </a></th>
+                                    <td>
+                                        Sent to order notification subscribers when a customer requests a return.
+                                        
+                    
+                                    </td>
+                                   
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" colspan="2"><a href="">Sales attribution edited
+                    
+                                    </a></th>
+                                    <td>
+                                        
+                                        Sent to order notification subscribers when the attributed staff on an order is edited.
+                    
+                                    </td>
+                                   
+                               
+                                 
+                                 
+                    
+                                 
+                                </tbody>
+                              </table>
+                        </div>
+
+
+                        <div class="container c1 my-3 py-2">
+                            <!-- <h5>Orders</h5> -->
+                    
+                          <div class="set_scroller">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="row" colspan="2"> <a href=""> Recipients</a></th>
+                                    <td scope="col">  
+                                            Location	
+                                  </td>
+                                  <td scope="col">         
+                              </td>
+                              <td scope="col"> 
+                              </td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" colspan="2">Send to "LOENEX COMPANY"  Support@loenex.com </th>
+                                    <td>
+                                        All
+                    
+                                    </td>
+                                    <td><button type="button" class="btn btn-outline-secondary"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Send test notification</button></td>
+                                   <td><div class="row">
+                                    <div class="col-lg-6">
+                                        <button type="button" class="btn btn-outline-secondary"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Disable</button>
+                                    </div>
+                                    <div class="col-lg-6">
+                                     <a href=""><img src="images/delete.png" alt=""></a>
+                                    </div>
+                                </div>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" colspan="2">Send to "LOENEX COMPANY"  Support@loenex.com</th>
+                                    <td>
+                                        
+                                        All
+                    
+                                    </td>
+                                    <td><button type="button" class="btn btn-outline-secondary"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Send test notification</button></td>
+                                    <td><div class="row">
+                                        <div class="col-lg-6">
+                                            <button type="button" class="btn btn-outline-secondary"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Disable</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                         <a href=""><img src="images/delete.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                   </tr>
+                                   <tr>
+                                    <th scope="row" colspan="2">Send to "LOENEX COMPANY"  Support@loenex.com</th>
+                                    <td>
+                                        
+                                        All
+                    
+                                    </td>
+                                    <td><button type="button" class="btn btn-outline-secondary"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Send test notification</button></td>
+                                    <td><div class="row">
+                                        <div class="col-lg-6">
+                                            <button type="button" class="btn btn-outline-secondary"  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">Disable</button>
+                                        </div>
+                                        <div class="col-lg-6">
+                                         <a href=""><img src="images/delete.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                   </tr>
+                                   
+                                   
+                               
+                                 
+                                 
+                    
+                                 
+                                </tbody>
+                              </table>
+                            </div>
+                        </div>
+
+
+                        <div class="container c1 my-3 py-2">
+                            <h5>Draft orders</h5>
+                    
+                            
+                            <table class="table">
+                               
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" colspan="2"><a href="">New draft order</a></th>
+                                    <td>  
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">  
+                                       <a href=""> Sent to store owner when a customer submits an order for review.</a>
+                    
+                                    </td>
+                                   
+                                  </tr>
+                                 
+                               
+                                 
+                                 
+                    
+                                 
+                                </tbody>
+                              </table>
+                             </div>
+
+                             <div class="container ">
+        
+                                <div class="row">
+                                    <div class="col-sm-4 col-md-4 my-3">
+                                        <h6 class="d-inline text-center">Webhooks
+                                        </h6>
+                                        <p  style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">You can subscribe to events for your products and orders by creating web hooks that will push XML or JSON notifications to a given URL.</p>
+                                        <button type="button" class="btn btn-outline-secondary py-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Create Webhook</button>
+                        
+                        
+                                    </div>
+                        
+                        
+                                </div>
+                                 </div>
+
+                                <div class="container c1 my-3 py-2">
+                                    <p class="text-center">You haven’t created any webhooks yet</p>
+                                </div>
+  </div>
+
+        
+     
+    

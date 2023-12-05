@@ -8,11 +8,10 @@ import { Component } from '@angular/core';
 export class PurchaseOrderBookReportComponent {
 
   ELEMENT_DATA = [
-    { name: '#Golden Company limited', INVESTOR_NAME	 : 'RECEIPT' ,   EMAIL	:'14568',PHONE_NO:'22.00$', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023', DATE_OF_JOINING:'12-nov-2023',	},
-    { name: '#Golden Company limited' ,   INVESTOR_NAME	 : 'RECEIPT', EMAIL	:'14568',PHONE_NO:'22.00$', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',DATE_OF_JOINING:'12-nov-2023',	},
-    { name: '#Golden Company limited',    INVESTOR_NAME	 : 'RECEIPT',  EMAIL	:'14568', PHONE_NO:'22.00$', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',DATE_OF_JOINING:'12-nov-2023',	},
-    { name: '#Golden Company limited' ,  INVESTOR_NAME	 : 'RECEIPT',    EMAIL	:'14568',PHONE_NO:'22.00$',SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',  DATE_OF_JOINING:'12-nov-2023',},
-    { name: '#Golden Company limited' , INVESTOR_NAME	 : 'RECEIPT',   EMAIL	:'14568', PHONE_NO:'22.00$', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',  DATE_OF_JOINING:'12-nov-2023',}
-  
+    { name: 'Debitors Ledger', INVESTOR_NAME	 : 'Purchase Order' ,   EMAIL	:'12',PHONE_NO:'12', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023', DATE_OF_JOINING:'12-nov-2023',	},
+    { name: 'Debitors Ledger' ,   INVESTOR_NAME	 : 'Purchase Order', EMAIL	:'12',PHONE_NO:'12', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',DATE_OF_JOINING:'12-nov-2023',	},
+    { name: 'Debitors Ledger',    INVESTOR_NAME	 : 'Purchase Order',  EMAIL	:'12', PHONE_NO:'12', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',DATE_OF_JOINING:'12-nov-2023',	},
+    { name: 'Debitors Ledger' ,  INVESTOR_NAME	 : 'Purchase Order',    EMAIL	:'12',PHONE_NO:'12',SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',  DATE_OF_JOINING:'12-nov-2023',},
+    { name: 'Debitors Ledger' , INVESTOR_NAME	 : 'Purchase Order',   EMAIL	:'12', PHONE_NO:'12', SHARES:'22.00 $', Investers_AMOUNT:'06-10-2023',  DATE_OF_JOINING:'12-nov-2023',}
   ];
 }

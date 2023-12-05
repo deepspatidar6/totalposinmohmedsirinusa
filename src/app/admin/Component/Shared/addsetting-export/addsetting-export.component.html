@@ -1,0 +1,106 @@
+
+
+    <mat-dialog-content>
+        <span mat-dialog-title>
+            <div class="set_header">
+              <div class="d-flex  align-items-center">
+               <span class="text-capitalize fs-4 mx-2 fw-bold" style="font-family: Arial, Helvetica, sans-serif;">New message</span>  
+              </div>
+              <div>
+                <button
+                align="end"
+                type="button"
+                [mat-dialog-close]="true"
+                class="btn-close"
+                aria-label="Close"
+              ></button>
+              </div>
+            </div>
+          </span>
+          <mat-divider></mat-divider>
+
+            <p>This CSV file can only be used to add or update translations.
+            </p>
+            <div class="container">
+                Language
+                <select class="form-select" aria-label="Default select example">
+                    <option selected> select...</option>
+                    <option value="1">Chinese</option>
+                    <option value="2">Russian</option>
+                    <option value="3">english</option>
+                    <option value="3">urdu</option>
+                    <option value="3">hindi</option>
+                    <option value="3">germany</option>
+                    <option value="3">chinese</option>
+                    <option value="3">japaneese</option>
+                    <option value="3">korian</option>
+                    <option value="3">frenchies</option>
+                </select>
+            </div>
+            <div class="container mt-4">
+                <p>Content</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        All
+                    </label>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value=""
+                            id="flexCheckIndeterminate">
+                        <label class="form-check-label" for="flexCheckIndeterminate">
+                            Metafields
+                        </label>
+                        <p>Include metafields if you use them to add content to your store. For example,
+                            apps that add content to products.</p>
+                    </div>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Outdated
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Untranslated
+                        </label>
+            </div>
+            <div class="container mt-4">
+                <p>File</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+
+
+                        CSV for Excel, Numbers, or another spreadsheet program
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                        id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        CSV for text editors </label>
+                </div>
+                <div class="container">
+                    <p>Your export will be sent to admin@nayshin.com. Learn more about <a href="">
+                            exporting languages</a></p>
+                </div>
+            </div>
+            <mat-divider></mat-divider>
+            <mat-dialog-actions class="py-2" align="end">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                  <div class=" Btn_Save" type="button"  >Export</div>
+                  <div mat-dialog-close class="Btn_Close" >Cancel</div>
+                </div>
+            </mat-dialog-actions>
+        </div>
+
+
+    </mat-dialog-content>

@@ -1,10 +1,9 @@
-<p>purchase-order-book-report works!</p>
 <div class="container my-4 ">
     <div class="prant_div">
       <div class="fast_div">
         <div class="super_chaild">
           <mat-icon>density_medium</mat-icon>
-          <img src="../../../../../assets/logos/report.png" height="32" width="32" />
+          <img src="../../../../../assets/logos/Purchaseregisterbook.png" height="50" width="50" />
           <span class="fs-4">Purchase Order Book
 
 
@@ -92,9 +91,9 @@
               </th>
               <th scope="col" class="text-center text-uppercase">PARTICULARS</th>
               <th scope="col" class="text-center text-uppercase">VOUHERS TYPE		</th>
-              <th scope="col" class="text-center text-uppercase">VOUHERS NO	</th>
-              <th scope="col" class="text-center text-uppercase">DEBIT </th>
-              <th scope="col" class="text-center text-uppercase">CREDIT</th>
+              <th scope="col" class="text-center text-uppercase">VOUHERS NO.	</th>
+              <th scope="col" class="text-center text-uppercase">ORDER NO.	</th>
+              <th scope="col" class="text-center text-uppercase">ORDER AMOUNT	</th>
               <th scope="col " style="text-align: center;">DATE</th>
               <th scope="col " style="text-align: center;">ACTION</th>
             </tr>
@@ -129,26 +128,38 @@
                 <div style="width: 150px;" class="text_decoreion border border-1 rounded py-2  ">{{po.Investers_AMOUNT}}</div>
               </td>
   <!-- icons start -->
-              <td class="mt-1">
-                <div class="parent_div">
-                  <div class="add_icon" matTooltip="copy" aria-label="Example icon button with a menu icon">
-                    <i class="ri-file-add-line"></i>
+              <td>
+                <div class="parent_div ">
+                  <div style="cursor: pointer;" class="view_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-eye-line"></i>
                   </div>
-                  <div class="view_icon mx-2" matTooltip="View">
-                    <i class="ri-eye-line"></i>
-                  </div>
-                  <div class="edit_icon" matTooltip="Edit">
-                    <i class="ri-pencil-line"></i>
-                  </div>
-                  <div class="delete_icon mx-2" matTooltip="Delete" aria-label="Example icon button with a menu icon">
-                    <i class="ri-delete-bin-6-line "></i>
-                  </div>
-                  <div class="print_icon" matTooltip="Print" aria-label="Example icon button with a menu icon">
-                    <i class="ri-printer-fill"></i>
-                  </div>
+                    <div style="cursor: pointer;" class="add_icon"
+                        aria-label="Example icon button with a menu icon">
+                        <i class="ri-file-text-fill"></i>
+                    </div>
+                    <div style="cursor: pointer;" class="print_icon"
+                        aria-label="Example icon button with a menu icon">
+                        <i class="ri-printer-fill"></i>
+                    </div>
                 </div>
-              </td>
+            </td>
               <!-- icons end-->
+
+              <tr>
+                <td colspan="2">TOTAL</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            
+                <td>
+                  <div style="width: 150px;" class="text_decoreion border border-1 rounded py-2  ">15</div>
+                </td>
+                <td></td>
+                <td></td>
+                <td></td>
+              
             </tr>
           </tbody>
         </table>

@@ -1,0 +1,37 @@
+<mat-dialog-content>
+    <span mat-dialog-title>
+        <div class="set_header">
+          <div class="d-flex  align-items-center">
+           <span class="text-capitalize fs-4 
+            fw-bold" style="font-family: Arial, Helvetica, sans-serif;">Add language</span>  
+          </div>
+          <div>
+            <button
+            align="end"
+            type="button"
+            [mat-dialog-close]="true"
+            class="btn-close"
+            aria-label="Close"
+          ></button>
+          </div>
+        </div>
+      </span>
+      <mat-divider></mat-divider>
+     
+          <form>
+            <div class="mb-3">
+               <p>Language</p>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+          
+          </form>
+        
+          <mat-divider></mat-divider>
+          <mat-dialog-actions class="py-2" align="end">
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <div class=" Btn_Save" type="button"  >Add</div>
+                <div mat-dialog-close class="Btn_Close" >Cancel</div>
+              </div>
+          </mat-dialog-actions>
+
+        </mat-dialog-content>

@@ -145,6 +145,18 @@ import { AddsalesReturnInvoiceUpdatedComponent } from './component/shared/addsal
 import { PurchseBillEntryComponent } from './component/pages/purchse-bill-entry/purchse-bill-entry.component';
 import { AddpurchseBillEntryComponent } from './component/shared/addpurchse-bill-entry/addpurchse-bill-entry.component';
 import { PurchaseOrderBookReportComponent } from './component/pages/purchase-order-book-report/purchase-order-book-report.component';
+import { SaleOrderBookComponent } from './component/pages/sale-order-book/sale-order-book.component';
+import { ReturnPackageBoxComponent } from './component/pages/return-package-box/return-package-box.component';
+import { AddreturnPackageBoxComponent } from './component/shared/addreturn-package-box/addreturn-package-box.component';
+import { SbillingComponent } from './component/pages/sbilling/sbilling.component';
+import { SCurrenciesComponent } from './component/pages/s-currencies/s-currencies.component';
+import { MarketComponent } from './component/pages/market/market.component';
+import { NotificationComponent } from './component/pages/notification/notification.component';
+import { PoliciesComponent } from './component/pages/policies/policies.component';
+import { LanguagesComponent } from './component/pages/languages/languages.component';
+import { AddsettingExportComponent } from './component/shared/addsetting-export/addsetting-export.component';
+import { AddsettingImportComponent } from './component/shared/addsetting-import/addsetting-import.component';
+import { AddsettingAddlanguageComponent } from './component/shared/addsetting-addlanguage/addsetting-addlanguage.component';
 
 export function HttpLoaderFactory(_http: HttpBackend) {
   return new MultiTranslateHttpLoader(_http , [
@@ -250,6 +262,18 @@ export function HttpLoaderFactory(_http: HttpBackend) {
     PurchseBillEntryComponent,
     AddpurchseBillEntryComponent,
     PurchaseOrderBookReportComponent,
+    SaleOrderBookComponent,
+    ReturnPackageBoxComponent,
+    AddreturnPackageBoxComponent,
+    SbillingComponent,
+    SCurrenciesComponent,
+    MarketComponent,
+    NotificationComponent,
+    PoliciesComponent,
+    LanguagesComponent,
+    AddsettingExportComponent,
+    AddsettingImportComponent,
+    AddsettingAddlanguageComponent,
     
   ],
   imports: [

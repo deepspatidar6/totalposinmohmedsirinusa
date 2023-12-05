@@ -1,0 +1,334 @@
+
+<div class="container my-4 ">
+    <div class="prant_div">
+      <div class="fast_div">
+        <div class="super_chaild">
+          <mat-icon>density_medium</mat-icon>
+          <img src="../../../../../assets/logos/notification.png" height="32" width="32" />
+          <span class="fs-4">Languages</span>
+        </div>
+        <div>
+          <a class="text_routes" routerLink="/admin"> Dashboard </a>
+          <i class="ri-arrow-right-s-line"></i>Languages
+        </div>
+      </div>
+      <div class="secoand_div">
+        <button mat-raised-button matTooltip="Filter.." class="demo-button " data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <i class="ri-filter-2-fill"></i>
+        </button>
+        <ul class="dropdown-menu p-3">
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Name</label>
+              <select class="form-select " aria-label=".form-select-sm example">
+                <option selected>Open this select name</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Email</label>
+              <select class="form-select" aria-label=".form-select-sm example">
+                <option selected>Open this select Email</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+          <li>
+            <div class="form-group">
+              <label class="form-label fw-bold">Phone Number</label>
+              <select class="form-select " aria-label=".form-select-sm example">
+                <option selected>Open this select Phone Number</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </li>
+        </ul>
+        <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 " data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <mat-icon>density_medium</mat-icon>
+        </button>
+  
+        <ul class="dropdown-menu">
+  
+          <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+          <li><a class="dropdown-item" href="#">Company website </a></li>
+        </ul>
+  
+        <button mat-raised-button matTooltip="Print" class="demo-button mx-2">
+          <i class="ri-printer-fill"></i>
+        </button>
+  
+        <button mat-raised-button matTooltip="Add"  class="demo-button ">
+          <i class="ri-add-line fs-4"></i>
+        </button>
+      </div>
+  
+    </div>
+    <hr/>
+      <div class="col-md-12 col-sm-12 set_scroller">
+        <div class="container my-4 ">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h3 class="d-inline">Languages
+                    </h3>
+                </div>
+        
+        
+                <div class="col-md-9 col-sm-12 d-flex gap-2 ">
+                    <!-- export modal start -->
+        
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                        style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;" (click)="add_export()" >Export
+                    </button>
+                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                    style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;" (click)="add_import()">Import
+                </button>
+                <button type="button" class="btn btn-outline-secondary btn-sm"
+                    style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;" (click)="add_addlanguage()">Add language
+                </button>
+            </div>
+        
+        
+            <div class="container shadow-sm p-3 mb-5 bg-white rounded mt-4">
+                <h6>Published languages</h6>
+                <p>Active in the markets they've been added to and visible to customers.</p>
+                <table class="table">
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">
+        
+                                English<button type="button" class="btn btn secondary btn-sm"
+                                    style="border-radius: 10px;">Default</button> </td>
+                            <td style="float: right;"> <a href="">Localize</a> <button
+                                    style="background-color: white; color: black;border: 0;float: right;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+        
+                        </tr>
+        
+                        <tr>
+                            <td scope="row">
+        
+                                Arabic
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                Chinese (Simplified)
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                French
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                German
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                Italian
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                Russian
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+        
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                Spanish
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+        
+                        </tr>
+                        <tr>
+                            <td scope="row">
+        
+                                Turkish
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+        
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button
+                                    style="background-color: white; color: black;border: 0;" type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="container shadow-sm p-3 mb-5 bg-white rounded">
+                <h6>Unpublished languages</h6>
+                <p>These languages are only visible to you.</p>
+                <table class="table">
+                    <thead>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td scope="row">
+                                Xhosa
+                                <p> <img src="images/info.png" alt="">No translations added</p>
+                            </td>
+                            <td style="float: right;"> <a href="">Translate</a> <button style="background-color: white; color: black;border: 0;"
+                                    type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> <button type="button"
+                                    class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only"></span>
+                                </button> </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        
+            <div class="container shadow-sm p-3 mb-5 bg-white rounded">
+                <table class="table">
+                    <thead>
+                        <!-- <tr>
+              <th scope="col">Domain</th>
+              <th scope="col">Target</th>
+         
+         </tr> -->
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">
+        
+                                Shopify Translate and Adapt
+                                <p> <img src="images/translate.png" alt="">Installed</p>
+                        <button type="button" class="btn btn secondary btn-sm"
+                                style="border-radius: 10px;">Default</button> </td>
+                            <td> <button type="button" class="btn btn-sm btn-light" aria-haspopup="true"
+                                    aria-expanded="false">Open</button> </td>
+        
+        
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- </div> -->
+            <p class="text-center">Learn more about languages. To change your account language, manage account.</p>
+    
+
+  </div>
+
+
+
+<!-- perfect -->
