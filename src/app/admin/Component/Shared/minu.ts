@@ -15,15 +15,6 @@ export  const Sub_Menu = [
             "routes" : "/admin/product",
             "img" : 'new-product.png'
             } ,
-            {"name_super_sub" : "Plans",
-            "routes" : "/admin/setting/plan",
-            "img" : 'new-product.png'
-            } ,
-            {"name_super_sub" : "Billings",
-            "routes" : "/admin/setting/billing",
-            "img" : 'new-product.png'
-            } ,
-            
    
             {  "name_super_sub" : "Departments ",
             "routes" : "/admin/department",

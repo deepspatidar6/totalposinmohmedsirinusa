@@ -169,18 +169,12 @@ const routes: Routes = [
         path : "purchaseregister",
         component : PurchaseRegisterComponent
       },
-      // {
-      //   path : "creditorsoutstandingreport",
-      //   component : CreditorsOutstandingReportComponent
-      // },
+    
       {
         path : "setting/plan",
         component : SplanComponent
       },
-      // {
-      //   path : "setting/selectaplan",
-      //   component : AddSelectAPlanComponent
-      // },
+     
       {
         path : "setting/billing",
         component : SchangesBillingComponent
