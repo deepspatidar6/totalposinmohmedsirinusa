@@ -1,0 +1,78 @@
+.add_icon {
+    height: 30px;
+    width: 30px;
+    background-color:#E92275;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.add_icon i {
+    color: #FFF;
+}
+
+.delete_icon {
+    height: 30px;
+    width: 30px;
+    background-color: #ff3a6e;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.delete_icon i {
+    color: #FFF;
+}
+
+.edit_icon {
+    height: 30px;
+    width: 30px;
+    background-color: #70d843;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit_icon i {
+    color: #FFF;
+}
+
+.parent_div {
+    display: flex;
+    gap: 10px;
+}
+
+.view_icon {
+    height: 30px;
+    width: 30px;
+    background-color: #ffa21d;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.view_icon i {
+    color: #FFF;
+}
+
+.print_icon {
+    height: 30px;
+    width: 30px;
+    background-color: #10c2a7;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.print_icon i {
+    color: #FFF;
+}
+
+

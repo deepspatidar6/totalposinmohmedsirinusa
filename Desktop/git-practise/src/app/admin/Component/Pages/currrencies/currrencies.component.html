@@ -1,0 +1,1487 @@
+<div class="container-fluid my-4 ">
+  <div class="prant_div">
+    <div class="fast_div">
+      <div class="super_chaild">
+        <mat-icon>density_medium</mat-icon>
+      <img src="../../../../../assets/logos/currencies.png" alt="image" class="salesicon" style="width: 3vw;" >
+        <span class="fs-4">Currencies</span>
+      </div>
+      <div>
+        <a class="text_routes" routerLink="/admin"> Dashboard </a>
+        <i class="ri-arrow-right-s-line"></i>Currencies
+      </div>
+    </div>
+    <div class="secoand_div">
+
+      <button mat-raised-button matTooltip="Filter.." class="demo-button">
+          
+          <i class="ri-filter-2-fill"></i>
+
+      </button>
+      <button mat-raised-button matTooltip="status" class="demo-button dropdown-toggle mx-2 "
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <mat-icon>density_medium</mat-icon>
+      </button>
+      <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="@wweb">Company Name </a></li>
+          <li><a class="dropdown-item" href="#">Company website </a></li>
+      </ul>
+      <button mat-raised-button class="demo-button ">
+          <i class="ri-printer-line fs-5"></i>
+      </button>
+      <button mat-raised-button matTooltip="Add" class="demo-button ms-2">
+          <i class="ri-add-line fs-5 "></i>
+          <!-- fitter -->
+      </button>
+  </div>
+  </div>
+  <hr />
+  <mat-form-field style="height: 100%; width: 100%;">
+         <mat-label>Search</mat-label>
+         <input matInput placeholder="Ex. ium" #input>
+  </mat-form-field>
+  <div class="card row">
+    <div class="col-md-12 col-sm-12 set_scroller" >
+      <table class="table table-hover">
+          <thead>
+              <tr style=" border: none;">
+              <th>
+                  <span>
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </span>
+                </th>
+                <th scope="col" class="text-center text-uppercase" >Name</th>
+                <th scope="col" class="text-center text-uppercase">code</th>
+                <th scope="col"class="text-center text-uppercase" >Symbol</th>     
+                <th scope="col" style="padding-left: 2rem;">ACTION</th>  
+              </tr>
+          </thead>
+<!-- table data from backend -->
+<tbody style="text-align: center;">
+  <!-- FIRST ROW -->
+<tr >
+<td class="mt-4">
+  <span>
+    <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+  </span>
+</td>
+
+<td>
+  <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Ringgit Malaysia</div>
+</td>
+
+<td> 
+  <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">MYR
+  </div>
+</td>
+<td>
+  <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">RM
+  </div>
+</td>
+<td>
+  <div style="width: 350px;" class="text_decoreion  rounded py-2 px-3">
+    <div class="parent_div ">
+
+      <div style="cursor: pointer;" class="add_icon"
+          aria-label="Example icon button with a menu icon">
+          <i class="ri-file-add-line"></i>
+      </div>
+      <div style="cursor: pointer;" class="view_icon"
+          aria-label="Example icon button with a menu icon">
+          <i class="ri-eye-line"></i>
+      </div>
+      <div style="cursor: pointer;" class="edit_icon"
+          aria-label="Example icon button with a menu icon">
+          <i class="ri-pencil-line"></i>
+      </div>
+
+      <div style="cursor: pointer;" class="delete_icon"
+          aria-label="Example icon button with a menu icon">
+          <i class="ri-delete-bin-6-line "></i>
+      </div>
+      <div style="cursor: pointer;" class="print_icon"
+          aria-label="Example icon button with a menu icon">
+          <i class="ri-printer-fill"></i>
+      </div>
+  </div>
+  </div>
+</td>
+</tr>
+<!-- END -->
+<!-- SECOND-ROW -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>
+  
+  <td>
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">บาท</div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">baht
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">฿
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion  rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+  
+  
+       
+    </div>
+    </div>
+  </td>
+</tr>
+  <!-- END -->
+  <!-- THIRD ROW -->
+  <tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>
+  
+  <td>
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Viet Nam Dong</div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">VND
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">₫
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+  </tr>
+  <!-- ROW END -->
+  <!-- FOURTH ROW -->
+  <tr >
+    <td class="mt-4">
+      <span>
+        <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+      </span>
+    </td>
+    
+    <td>
+      <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Dinar Algérien</div>
+    </td>
+    
+    <td> 
+      <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">DZD
+      </div>
+    </td>
+    <td>
+      <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">DA
+      </div>
+    </td>
+    <td>
+      <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+        <div class="parent_div ">
+    
+          <div style="cursor: pointer;" class="add_icon"
+              aria-label="Example icon button with a menu icon">
+              <i class="ri-file-add-line"></i>
+          </div>
+          <div style="cursor: pointer;" class="view_icon"
+              aria-label="Example icon button with a menu icon">
+              <i class="ri-eye-line"></i>
+          </div>
+          <div style="cursor: pointer;" class="edit_icon"
+              aria-label="Example icon button with a menu icon">
+              <i class="ri-pencil-line"></i>
+          </div>
+    
+          <div style="cursor: pointer;" class="delete_icon"
+              aria-label="Example icon button with a menu icon">
+              <i class="ri-delete-bin-6-line "></i>
+          </div>
+          <div style="cursor: pointer;" class="print_icon"
+              aria-label="Example icon button with a menu icon">
+              <i class="ri-printer-fill"></i>
+          </div>
+      </div>
+      </div>
+    </td>
+  </tr>
+    <!-- FIFTH ROW -->
+    <tr >
+      <td class="mt-4">
+        <span>
+          <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+        </span>
+      </td>
+      
+      <td>
+        <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">INR</div>
+      </td>
+      
+      <td> 
+        <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">INR
+        </div>
+      </td>
+      <td>
+        <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">₹
+        </div>
+      </td>
+      <td>
+        <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+          <div class="parent_div ">
+      
+            <div style="cursor: pointer;" class="add_icon"
+                aria-label="Example icon button with a menu icon">
+                <i class="ri-file-add-line"></i>
+            </div>
+            <div style="cursor: pointer;" class="view_icon"
+                aria-label="Example icon button with a menu icon">
+                <i class="ri-eye-line"></i>
+            </div>
+            <div style="cursor: pointer;" class="edit_icon"
+                aria-label="Example icon button with a menu icon">
+                <i class="ri-pencil-line"></i>
+            </div>
+      
+            <div style="cursor: pointer;" class="delete_icon"
+                aria-label="Example icon button with a menu icon">
+                <i class="ri-delete-bin-6-line "></i>
+            </div>
+            <div style="cursor: pointer;" class="print_icon"
+                aria-label="Example icon button with a menu icon">
+                <i class="ri-printer-fill"></i>
+            </div>
+        </div>
+        </div>
+      </td>
+    </tr>
+      <!-- SIXTH ROW -->
+      <tr >
+        <td class="mt-4">
+          <span>
+            <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+          </span>
+        </td>
+        
+        <td>  
+          
+          <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">TZS</div>
+        </td>
+        
+        <td> 
+          <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">255
+          </div>
+        </td>
+        <td>
+          <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">TSH
+          </div>
+        </td>
+        <td>
+          <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+            <div class="parent_div ">
+        
+              <div style="cursor: pointer;" class="add_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-file-add-line"></i>
+              </div>
+              <div style="cursor: pointer;" class="view_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-eye-line"></i>
+              </div>
+              <div style="cursor: pointer;" class="edit_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-pencil-line"></i>
+              </div>
+        
+              <div style="cursor: pointer;" class="delete_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-delete-bin-6-line "></i>
+              </div>
+              <div style="cursor: pointer;" class="print_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-printer-fill"></i>
+              </div>
+          </div>
+          </div>
+        </td>
+      </tr>
+      <!-- SEVENTH ROW -->
+      <tr >
+        <td class="mt-4">
+          <span>
+            <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+          </span>
+        </td>       
+        <td>          
+          <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">CFA
+            </div>
+        </td>
+        
+        <td> 
+          <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">CFA
+          </div>
+        </td>
+        <td>
+          <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">XAF
+          </div>
+        </td>
+        <td>
+          <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+            <div class="parent_div ">
+        
+              <div style="cursor: pointer;" class="add_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-file-add-line"></i>
+              </div>
+              <div style="cursor: pointer;" class="view_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-eye-line"></i>
+              </div>
+              <div style="cursor: pointer;" class="edit_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-pencil-line"></i>
+              </div>
+        
+              <div style="cursor: pointer;" class="delete_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-delete-bin-6-line "></i>
+              </div>
+              <div style="cursor: pointer;" class="print_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-printer-fill"></i>
+              </div>
+          </div>
+          </div>
+        </td>
+      </tr>
+      <!-- Eightth row -->
+      <tr >
+        <td class="mt-4">
+          <span>
+            <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+          </span>
+        </td>       
+        <td>          
+          <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">MAD
+            </div>
+        </td>
+        
+        <td> 
+          <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">MAD
+          </div>
+        </td>
+        <td>
+          <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">MAD
+          </div>
+        </td>
+        <td>
+          <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+            <div class="parent_div ">
+        
+              <div style="cursor: pointer;" class="add_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-file-add-line"></i>
+              </div>
+              <div style="cursor: pointer;" class="view_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-eye-line"></i>
+              </div>
+              <div style="cursor: pointer;" class="edit_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-pencil-line"></i>
+              </div>
+        
+              <div style="cursor: pointer;" class="delete_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-delete-bin-6-line "></i>
+              </div>
+              <div style="cursor: pointer;" class="print_icon"
+                  aria-label="Example icon button with a menu icon">
+                  <i class="ri-printer-fill"></i>
+              </div>
+          </div>
+          </div>
+        </td>
+      </tr>
+<!-- Nineth row -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>       
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">جنيه مصري
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">EG
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">EG
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- TENTH -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>       
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">LKR
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">LKR
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">LKR
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- ELEVENTH -->
+
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>       
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Lari
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">GEL
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">₾
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- twelveth -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>       
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Indian Rupees
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">INR
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">   ₹
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- Thirteen -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>      
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Taka
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">bdt
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">৳
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 14 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+    </span>
+  </td>    
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded "> Uganda Shillings
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">UGS
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">UGA
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 15 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded "> تومان
+      </div>
+  </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">IR
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">تومان
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 16 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded "> ريال يمني
+    </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">YER
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">ر.ي
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 17 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>          
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded "> Kenya
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">KES
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">KES
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 18 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Real
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> R$
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">BRL
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 19 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Philippine Peso
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> PHP
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">PHP
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 20 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">EGP
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> EGP
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">EGP
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 21 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Rupiah
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> IDR
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">Rp
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 22 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Rupee
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> PKR
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">RS
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 23 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">LBP
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> LBP
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">LBP
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 24 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">US Dollar
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> USD
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">$
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 25 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Rupees
+      
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> RS
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">₹
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 26 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">Pound Sterling    
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> GBP
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">£
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+<!-- 27 -->
+<tr >
+  <td class="mt-4">
+    <span>
+      <input class="form-check-input mt-2" type="checkbox" id="flexCheckDefault">
+
+    </span>
+  </td>    
+  <td>        
+   
+    <div style="width: 250px;" class="text_decoreion p-2 border border-1 rounded ">EURO  
+ </div>
+    </td>
+  
+  <td> 
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3"> EURO
+      
+    </div>
+  </td>
+  <td>
+    <div style="width: 250px;" class="text_decoreion border border-1 rounded py-2 px-3">€
+
+    </div>
+  </td>
+  <td>
+    <div style="width: 350px;" class="text_decoreion rounded py-2 px-3">
+      <div class="parent_div ">
+  
+        <div style="cursor: pointer;" class="add_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-file-add-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="view_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-eye-line"></i>
+        </div>
+        <div style="cursor: pointer;" class="edit_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-pencil-line"></i>
+        </div>
+  
+        <div style="cursor: pointer;" class="delete_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-delete-bin-6-line "></i>
+        </div>
+        <div style="cursor: pointer;" class="print_icon"
+            aria-label="Example icon button with a menu icon">
+            <i class="ri-printer-fill"></i>
+        </div>
+    </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+      </table>
+     
+    </div>
+
+  </div>
+ <div class="row my-3 ">
+    <div class="prant_div">
+      <div class="new_dropdown">
+        <div>
+          <div class="input-group mb-3">
+            <button type="button" class="btn btn-outline-secondary">10</button>
+            <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">15</a></li>
+              <li><a class="dropdown-item" href="#">25</a></li>
+              <li><a class="dropdown-item" href="#">50</a></li>
+              <li><a class="dropdown-item" href="#">100</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="d-grid ga d-md-flex justify-content-md-end">
+          <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary"> 1</button>
+              <button type="button" class="btn btn-outline-secondary">2</button>
+              <button type="button" class="btn btn-outline-secondary">3</button>
+              <button type="button" class="btn btn-outline-secondary">4</button>
+              <button type="button" class="btn btn-outline-secondary">5</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="d-grid ga d-md-flex justify-content-md-end">
+          <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group me-2" role="group" aria-label="First group">
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="fas fa-angle-left"></i>
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="fas fa-angle-left"></i>
+              </button>
+              <button type="button" class="btn btn-outline-secondary">
+                <i class="fas fa-angle-right"></i>
+              </button>
+              <button type="button" class="btn btn-outline-secondary ">
+                <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+       </div>
+    </div>
+ </div>
+</div>
